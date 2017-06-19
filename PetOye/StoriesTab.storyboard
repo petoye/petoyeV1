@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="idt-Ut-hLS">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--STORIES-->
+        <scene sceneID="vgf-EX-b5m">
+            <objects>
+                <viewController id="idt-Ut-hLS" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="BDl-X0-pqE"/>
+                        <viewControllerLayoutGuide type="bottom" id="9u1-qv-thV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ddS-DS-ana">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="STORIES" image="storiesUnselected" selectedImage="storiesSelected" id="4Lc-SH-Tyu"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="414" height="736"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1GE-j9-leA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-173" y="-944"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="storiesSelected" width="24" height="26"/>
+        <image name="storiesUnselected" width="24" height="26"/>
+    </resources>
+</document>

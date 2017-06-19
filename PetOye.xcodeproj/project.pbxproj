@@ -7,14 +7,50 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9CF748533FC94194916197EE /* Pods_PetOye.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FD0AD1B655AFF41BBB31D5A /* Pods_PetOye.framework */; };
+		E418C4DD1EF6FA7A00B02C47 /* introViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E418C4DC1EF6FA7A00B02C47 /* introViewController.swift */; };
+		E418C4DF1EF6FD2D00B02C47 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E418C4DE1EF6FD2D00B02C47 /* Colors.swift */; };
+		E4768C6F1EF771DE003D2506 /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4768C6E1EF771DE003D2506 /* loginViewController.swift */; };
+		E4768C711EF7FB98003D2506 /* tutSample1.mov in Resources */ = {isa = PBXBuildFile; fileRef = E4768C701EF7FB98003D2506 /* tutSample1.mov */; };
+		E4768C731EF80F15003D2506 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4768C721EF80F15003D2506 /* Helpers.swift */; };
+		E4768C751EF823DE003D2506 /* basicInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4768C741EF823DE003D2506 /* basicInfoViewController.swift */; };
+		E4768C771EF838FF003D2506 /* userTypeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4768C761EF838FF003D2506 /* userTypeTableViewCell.swift */; };
+		E4768C791EF85EDE003D2506 /* Intro.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4768C781EF85EDE003D2506 /* Intro.storyboard */; };
+		E4768C7B1EF86041003D2506 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4768C7A1EF86041003D2506 /* Home.storyboard */; };
+		E4768C7D1EF868F6003D2506 /* HomeTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4768C7C1EF868F6003D2506 /* HomeTab.storyboard */; };
+		E4768C7F1EF86915003D2506 /* StoriesTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4768C7E1EF86915003D2506 /* StoriesTab.storyboard */; };
+		E4768C811EF86930003D2506 /* NotificationsTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4768C801EF86930003D2506 /* NotificationsTab.storyboard */; };
+		E4768C831EF86947003D2506 /* MeTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4768C821EF86947003D2506 /* MeTab.storyboard */; };
+		E4768C891EF86B0B003D2506 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = E4768C881EF86B0B003D2506 /* .gitignore */; };
 		E49CB8261EEFB36E00FE2C73 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49CB8251EEFB36E00FE2C73 /* AppDelegate.swift */; };
 		E49CB8281EEFB36E00FE2C73 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49CB8271EEFB36E00FE2C73 /* ViewController.swift */; };
 		E49CB82B1EEFB36E00FE2C73 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E49CB8291EEFB36E00FE2C73 /* Main.storyboard */; };
 		E49CB82D1EEFB36E00FE2C73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E49CB82C1EEFB36E00FE2C73 /* Assets.xcassets */; };
 		E49CB8301EEFB36E00FE2C73 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E49CB82E1EEFB36E00FE2C73 /* LaunchScreen.storyboard */; };
+		E49CB8381EEFB69500FE2C73 /* HVD Fonts - BrandonText-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = E49CB8371EEFB68B00FE2C73 /* HVD Fonts - BrandonText-Regular.otf */; };
+		E49CB83A1EEFB6AF00FE2C73 /* HVD Fonts - BrandonText-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = E49CB8391EEFB6A900FE2C73 /* HVD Fonts - BrandonText-Light.otf */; };
+		E49CB83C1EEFB6C800FE2C73 /* HVD Fonts - BrandonText-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = E49CB83B1EEFB6C000FE2C73 /* HVD Fonts - BrandonText-Bold.otf */; };
+		E49CB83E1EEFB6DB00FE2C73 /* HVD Fonts - BrandonText-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = E49CB83D1EEFB6D600FE2C73 /* HVD Fonts - BrandonText-Medium.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4FD0AD1B655AFF41BBB31D5A /* Pods_PetOye.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PetOye.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DDCA9B1A44F7B9CFA8902CC /* Pods-PetOye.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PetOye.release.xcconfig"; path = "Pods/Target Support Files/Pods-PetOye/Pods-PetOye.release.xcconfig"; sourceTree = "<group>"; };
+		CF8796C3148C2DBDA68187DA /* Pods-PetOye.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PetOye.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PetOye/Pods-PetOye.debug.xcconfig"; sourceTree = "<group>"; };
+		E418C4DC1EF6FA7A00B02C47 /* introViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = introViewController.swift; sourceTree = "<group>"; };
+		E418C4DE1EF6FD2D00B02C47 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		E4768C6E1EF771DE003D2506 /* loginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
+		E4768C701EF7FB98003D2506 /* tutSample1.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = tutSample1.mov; sourceTree = "<group>"; };
+		E4768C721EF80F15003D2506 /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		E4768C741EF823DE003D2506 /* basicInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = basicInfoViewController.swift; sourceTree = "<group>"; };
+		E4768C761EF838FF003D2506 /* userTypeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = userTypeTableViewCell.swift; sourceTree = "<group>"; };
+		E4768C781EF85EDE003D2506 /* Intro.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Intro.storyboard; sourceTree = "<group>"; };
+		E4768C7A1EF86041003D2506 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		E4768C7C1EF868F6003D2506 /* HomeTab.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HomeTab.storyboard; sourceTree = "<group>"; };
+		E4768C7E1EF86915003D2506 /* StoriesTab.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = StoriesTab.storyboard; sourceTree = "<group>"; };
+		E4768C801EF86930003D2506 /* NotificationsTab.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = NotificationsTab.storyboard; sourceTree = "<group>"; };
+		E4768C821EF86947003D2506 /* MeTab.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MeTab.storyboard; sourceTree = "<group>"; };
+		E4768C881EF86B0B003D2506 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		E49CB8221EEFB36E00FE2C73 /* PetOye.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PetOye.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E49CB8251EEFB36E00FE2C73 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E49CB8271EEFB36E00FE2C73 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +58,10 @@
 		E49CB82C1EEFB36E00FE2C73 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E49CB82F1EEFB36E00FE2C73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E49CB8311EEFB36E00FE2C73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E49CB8371EEFB68B00FE2C73 /* HVD Fonts - BrandonText-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HVD Fonts - BrandonText-Regular.otf"; sourceTree = "<group>"; };
+		E49CB8391EEFB6A900FE2C73 /* HVD Fonts - BrandonText-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HVD Fonts - BrandonText-Light.otf"; sourceTree = "<group>"; };
+		E49CB83B1EEFB6C000FE2C73 /* HVD Fonts - BrandonText-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HVD Fonts - BrandonText-Bold.otf"; sourceTree = "<group>"; };
+		E49CB83D1EEFB6D600FE2C73 /* HVD Fonts - BrandonText-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HVD Fonts - BrandonText-Medium.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +69,76 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CF748533FC94194916197EE /* Pods_PetOye.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		465EE181C93E2F76CAE743D3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4FD0AD1B655AFF41BBB31D5A /* Pods_PetOye.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		966F206CA480C7DCF9274EE2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CF8796C3148C2DBDA68187DA /* Pods-PetOye.debug.xcconfig */,
+				9DDCA9B1A44F7B9CFA8902CC /* Pods-PetOye.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E4768C841EF86969003D2506 /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				E4768C701EF7FB98003D2506 /* tutSample1.mov */,
+				E49CB83F1EEFB6E000FE2C73 /* Fonts */,
+			);
+			name = "Supporting files";
+			sourceTree = "<group>";
+		};
+		E4768C851EF86988003D2506 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				E418C4DE1EF6FD2D00B02C47 /* Colors.swift */,
+				E4768C721EF80F15003D2506 /* Helpers.swift */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		E4768C861EF869A2003D2506 /* Intro */ = {
+			isa = PBXGroup;
+			children = (
+				E49CB8271EEFB36E00FE2C73 /* ViewController.swift */,
+				E4768C741EF823DE003D2506 /* basicInfoViewController.swift */,
+				E4768C6E1EF771DE003D2506 /* loginViewController.swift */,
+				E418C4DC1EF6FA7A00B02C47 /* introViewController.swift */,
+				E4768C761EF838FF003D2506 /* userTypeTableViewCell.swift */,
+				E4768C841EF86969003D2506 /* Supporting files */,
+			);
+			name = Intro;
+			sourceTree = "<group>";
+		};
+		E4768C871EF869B1003D2506 /* PetOye app v1 */ = {
+			isa = PBXGroup;
+			children = (
+				E4768C861EF869A2003D2506 /* Intro */,
+			);
+			name = "PetOye app v1";
+			sourceTree = "<group>";
+		};
 		E49CB8191EEFB36E00FE2C73 = {
 			isa = PBXGroup;
 			children = (
 				E49CB8241EEFB36E00FE2C73 /* PetOye */,
 				E49CB8231EEFB36E00FE2C73 /* Products */,
+				966F206CA480C7DCF9274EE2 /* Pods */,
+				465EE181C93E2F76CAE743D3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +153,33 @@
 		E49CB8241EEFB36E00FE2C73 /* PetOye */ = {
 			isa = PBXGroup;
 			children = (
+				E4768C871EF869B1003D2506 /* PetOye app v1 */,
+				E4768C851EF86988003D2506 /* Helpers */,
 				E49CB8251EEFB36E00FE2C73 /* AppDelegate.swift */,
-				E49CB8271EEFB36E00FE2C73 /* ViewController.swift */,
 				E49CB8291EEFB36E00FE2C73 /* Main.storyboard */,
+				E4768C781EF85EDE003D2506 /* Intro.storyboard */,
+				E4768C7A1EF86041003D2506 /* Home.storyboard */,
+				E4768C821EF86947003D2506 /* MeTab.storyboard */,
+				E4768C801EF86930003D2506 /* NotificationsTab.storyboard */,
+				E4768C7E1EF86915003D2506 /* StoriesTab.storyboard */,
+				E4768C7C1EF868F6003D2506 /* HomeTab.storyboard */,
+				E4768C881EF86B0B003D2506 /* .gitignore */,
 				E49CB82C1EEFB36E00FE2C73 /* Assets.xcassets */,
 				E49CB82E1EEFB36E00FE2C73 /* LaunchScreen.storyboard */,
 				E49CB8311EEFB36E00FE2C73 /* Info.plist */,
 			);
 			path = PetOye;
+			sourceTree = "<group>";
+		};
+		E49CB83F1EEFB6E000FE2C73 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				E49CB8371EEFB68B00FE2C73 /* HVD Fonts - BrandonText-Regular.otf */,
+				E49CB8391EEFB6A900FE2C73 /* HVD Fonts - BrandonText-Light.otf */,
+				E49CB83B1EEFB6C000FE2C73 /* HVD Fonts - BrandonText-Bold.otf */,
+				E49CB83D1EEFB6D600FE2C73 /* HVD Fonts - BrandonText-Medium.otf */,
+			);
+			name = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +189,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E49CB8341EEFB36E00FE2C73 /* Build configuration list for PBXNativeTarget "PetOye" */;
 			buildPhases = (
+				D647B380A1C03CBB8B05AEE1 /* [CP] Check Pods Manifest.lock */,
 				E49CB81E1EEFB36E00FE2C73 /* Sources */,
 				E49CB81F1EEFB36E00FE2C73 /* Frameworks */,
 				E49CB8201EEFB36E00FE2C73 /* Resources */,
+				3B40342087739CFE3D23A25A /* [CP] Embed Pods Frameworks */,
+				8A08B055BD4288453F4E4467 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -96,6 +217,7 @@
 				TargetAttributes = {
 					E49CB8211EEFB36E00FE2C73 = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = JC959F8T7E;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -123,13 +245,73 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4768C831EF86947003D2506 /* MeTab.storyboard in Resources */,
+				E49CB83E1EEFB6DB00FE2C73 /* HVD Fonts - BrandonText-Medium.otf in Resources */,
+				E4768C7B1EF86041003D2506 /* Home.storyboard in Resources */,
+				E49CB83C1EEFB6C800FE2C73 /* HVD Fonts - BrandonText-Bold.otf in Resources */,
+				E4768C791EF85EDE003D2506 /* Intro.storyboard in Resources */,
+				E4768C7F1EF86915003D2506 /* StoriesTab.storyboard in Resources */,
+				E49CB83A1EEFB6AF00FE2C73 /* HVD Fonts - BrandonText-Light.otf in Resources */,
+				E4768C7D1EF868F6003D2506 /* HomeTab.storyboard in Resources */,
+				E49CB8381EEFB69500FE2C73 /* HVD Fonts - BrandonText-Regular.otf in Resources */,
 				E49CB8301EEFB36E00FE2C73 /* LaunchScreen.storyboard in Resources */,
+				E4768C891EF86B0B003D2506 /* .gitignore in Resources */,
+				E4768C811EF86930003D2506 /* NotificationsTab.storyboard in Resources */,
 				E49CB82D1EEFB36E00FE2C73 /* Assets.xcassets in Resources */,
+				E4768C711EF7FB98003D2506 /* tutSample1.mov in Resources */,
 				E49CB82B1EEFB36E00FE2C73 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3B40342087739CFE3D23A25A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PetOye/Pods-PetOye-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8A08B055BD4288453F4E4467 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PetOye/Pods-PetOye-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D647B380A1C03CBB8B05AEE1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E49CB81E1EEFB36E00FE2C73 /* Sources */ = {
@@ -137,7 +319,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				E49CB8281EEFB36E00FE2C73 /* ViewController.swift in Sources */,
+				E4768C751EF823DE003D2506 /* basicInfoViewController.swift in Sources */,
+				E4768C771EF838FF003D2506 /* userTypeTableViewCell.swift in Sources */,
+				E4768C731EF80F15003D2506 /* Helpers.swift in Sources */,
+				E418C4DF1EF6FD2D00B02C47 /* Colors.swift in Sources */,
 				E49CB8261EEFB36E00FE2C73 /* AppDelegate.swift in Sources */,
+				E418C4DD1EF6FA7A00B02C47 /* introViewController.swift in Sources */,
+				E4768C6F1EF771DE003D2506 /* loginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,8 +446,11 @@
 		};
 		E49CB8351EEFB36E00FE2C73 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF8796C3148C2DBDA68187DA /* Pods-PetOye.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = JC959F8T7E;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = PetOye/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vit.PetOye;
@@ -270,8 +461,11 @@
 		};
 		E49CB8361EEFB36E00FE2C73 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9DDCA9B1A44F7B9CFA8902CC /* Pods-PetOye.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = JC959F8T7E;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = PetOye/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vit.PetOye;
@@ -299,6 +493,7 @@
 				E49CB8361EEFB36E00FE2C73 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
