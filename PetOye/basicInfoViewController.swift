@@ -101,13 +101,13 @@ class basicInfoViewController: UIViewController, UITableViewDelegate, UITableVie
     
     func setupSignup() {
         
-        signupButton.setTitleColor(self.HEX57A784(), for: .normal)
+        signupButton.setTitleColor(self.HEX37A784(), for: .normal)
         
         signupButton.layer.cornerRadius = 31.5
         
         signupButton.clipsToBounds = true
         
-        signupButton.layer.borderColor = self.HEX57A784().cgColor
+        signupButton.layer.borderColor = self.HEX37A784().cgColor
         
         signupButton.layer.borderWidth = 1.3
         
@@ -210,7 +210,7 @@ class basicInfoViewController: UIViewController, UITableViewDelegate, UITableVie
             
             style.cornerRadius = 22.5
             
-            style.backgroundColor = self.HEX57A784()
+            style.backgroundColor = self.HEX37A784()
             
             style.messageFont = UIFont(name: "Brandon Text", size: 18)!
             
@@ -257,7 +257,7 @@ class basicInfoViewController: UIViewController, UITableViewDelegate, UITableVie
             
             if selectedUserType[indexPath.row] == true {
                     
-                 cell.selectIndicator.backgroundColor = self.HEX57A784()
+                 cell.selectIndicator.backgroundColor = self.HEX37A784()
             }
             else {
                 
@@ -278,7 +278,7 @@ class basicInfoViewController: UIViewController, UITableViewDelegate, UITableVie
             
             if selectedPetType[indexPath.row] == true {
                 
-                cell.selectIndicator.backgroundColor = self.HEX57A784()
+                cell.selectIndicator.backgroundColor = self.HEX37A784()
             }
             else {
                 

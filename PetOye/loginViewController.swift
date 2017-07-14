@@ -107,13 +107,13 @@ class loginViewController: UIViewController {
     
     func loginButtonSetup() {
         
-        loginButton.setTitleColor(self.HEX57A784(), for: .normal)
+        loginButton.setTitleColor(self.HEX37A784(), for: .normal)
         
         loginButton.layer.cornerRadius = 31.5
         
         loginButton.clipsToBounds = true
         
-        loginButton.layer.borderColor = self.HEX57A784().cgColor
+        loginButton.layer.borderColor = self.HEX37A784().cgColor
         
         loginButton.layer.borderWidth = 1.3
         
@@ -205,7 +205,7 @@ class loginViewController: UIViewController {
                 
                 style.cornerRadius = 22.5
                 
-                style.backgroundColor = self.HEX57A784()
+                style.backgroundColor = self.HEX37A784()
                 
                 style.messageFont = UIFont(name: "Brandon Text", size: 18)!
                 
@@ -234,7 +234,7 @@ class loginViewController: UIViewController {
     
                     style.cornerRadius = 22.5
                     
-                    style.backgroundColor = self.HEX57A784()
+                    style.backgroundColor = self.HEX37A784()
                     
                     style.messageFont = UIFont(name: "Brandon Text", size: 18)!
                     

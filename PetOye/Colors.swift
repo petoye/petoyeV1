@@ -15,9 +15,14 @@ extension UIViewController {
         return UIColor(red: 68.0/255.0, green: 97.0/255.0, blue: 157.0/255.0, alpha: 1)
     }
     
-    func HEX57A784() -> UIColor {
+    func HEX37A784() -> UIColor {
         
         return UIColor(red: 87.0/255.0, green: 167.0/255.0, blue: 132.0/255.0, alpha: 1)
+    }
+    
+    func HEXDDBABA() -> UIColor {
+        
+        return UIColor(red: 221.0/255.0, green: 185.0/255.0, blue: 185.0/255.0, alpha: 1)
     }
 
 }

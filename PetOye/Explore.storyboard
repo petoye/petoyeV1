@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--EXPLORE-->
+        <!--View Controller-->
         <scene sceneID="RWq-3x-M6y">
             <objects>
                 <viewController id="4sd-QD-fhz" sceneMemberID="viewController">
@@ -22,7 +22,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="EXPLORE" image="explore" selectedImage="explore_selected" id="QLP-Pz-P9z"/>
+                    <tabBarItem key="tabBarItem" title="" image="explore" selectedImage="explore_selected" id="QLP-Pz-P9z"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TOL-t8-rJ8" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -12,6 +12,10 @@ class homeViewController: UIViewController {
 
     @IBOutlet weak var searchView: UIView!
     
+    @IBOutlet weak var hamButton: UIBarButtonItem!
+    
+    @IBOutlet weak var navigationBar: UINavigationBar!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -32,6 +36,15 @@ class homeViewController: UIViewController {
         searchView.layer.shadowRadius = 4.0;
         searchView.layer.shadowOpacity = 0.3;
         searchView.layer.masksToBounds = false;
+        
+        hamButton.target = revealViewController()
+        hamButton.action = #selector(SWRevealViewController.revealToggle(_:))
+        
+        revealViewController().rearViewRevealWidth = self.view.frame.size.width - 49
+        
+        view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+        
+        navigationBar.tintColor = UIColor.clear
     }
     
     

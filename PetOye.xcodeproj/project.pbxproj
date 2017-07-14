@@ -24,6 +24,9 @@
 		E4768C891EF86B0B003D2506 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = E4768C881EF86B0B003D2506 /* .gitignore */; };
 		E4768C8B1EF929E2003D2506 /* homeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4768C8A1EF929E2003D2506 /* homeViewController.swift */; };
 		E49B88D81F18B74C006451AB /* Explore.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E49B88D71F18B74C006451AB /* Explore.storyboard */; };
+		E49B88DC1F18C20A006451AB /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E49B88DB1F18C20A006451AB /* SWRevealViewController.m */; };
+		E49B88DE1F18D279006451AB /* hamburgerMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49B88DD1F18D279006451AB /* hamburgerMenuViewController.swift */; };
+		E49B88E01F18E006006451AB /* hamUserInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49B88DF1F18E006006451AB /* hamUserInfoTableViewCell.swift */; };
 		E49CB8261EEFB36E00FE2C73 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49CB8251EEFB36E00FE2C73 /* AppDelegate.swift */; };
 		E49CB8281EEFB36E00FE2C73 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49CB8271EEFB36E00FE2C73 /* ViewController.swift */; };
 		E49CB82B1EEFB36E00FE2C73 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E49CB8291EEFB36E00FE2C73 /* Main.storyboard */; };
@@ -33,6 +36,11 @@
 		E49CB83A1EEFB6AF00FE2C73 /* HVD Fonts - BrandonText-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = E49CB8391EEFB6A900FE2C73 /* HVD Fonts - BrandonText-Light.otf */; };
 		E49CB83C1EEFB6C800FE2C73 /* HVD Fonts - BrandonText-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = E49CB83B1EEFB6C000FE2C73 /* HVD Fonts - BrandonText-Bold.otf */; };
 		E49CB83E1EEFB6DB00FE2C73 /* HVD Fonts - BrandonText-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = E49CB83D1EEFB6D600FE2C73 /* HVD Fonts - BrandonText-Medium.otf */; };
+		E4D80E861F18EC3B00C09B6F /* shortcutTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D80E851F18EC3B00C09B6F /* shortcutTableViewCell.swift */; };
+		E4D80E881F18F26700C09B6F /* demo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E4D80E871F18F26700C09B6F /* demo.jpg */; };
+		E4D80E8A1F18F93B00C09B6F /* petStuffTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D80E891F18F93B00C09B6F /* petStuffTableViewCell.swift */; };
+		E4D80E8C1F19119200C09B6F /* subMenuTitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D80E8B1F19119200C09B6F /* subMenuTitleTableViewCell.swift */; };
+		E4D80E8E1F191D1700C09B6F /* demoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D80E8D1F191D1700C09B6F /* demoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +63,11 @@
 		E4768C881EF86B0B003D2506 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		E4768C8A1EF929E2003D2506 /* homeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = homeViewController.swift; sourceTree = "<group>"; };
 		E49B88D71F18B74C006451AB /* Explore.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Explore.storyboard; sourceTree = "<group>"; };
+		E49B88D91F18C208006451AB /* PetOye-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PetOye-Bridging-Header.h"; sourceTree = "<group>"; };
+		E49B88DA1F18C20A006451AB /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		E49B88DB1F18C20A006451AB /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		E49B88DD1F18D279006451AB /* hamburgerMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = hamburgerMenuViewController.swift; sourceTree = "<group>"; };
+		E49B88DF1F18E006006451AB /* hamUserInfoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = hamUserInfoTableViewCell.swift; sourceTree = "<group>"; };
 		E49CB8221EEFB36E00FE2C73 /* PetOye.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PetOye.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E49CB8251EEFB36E00FE2C73 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E49CB8271EEFB36E00FE2C73 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -66,6 +79,11 @@
 		E49CB8391EEFB6A900FE2C73 /* HVD Fonts - BrandonText-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HVD Fonts - BrandonText-Light.otf"; sourceTree = "<group>"; };
 		E49CB83B1EEFB6C000FE2C73 /* HVD Fonts - BrandonText-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HVD Fonts - BrandonText-Bold.otf"; sourceTree = "<group>"; };
 		E49CB83D1EEFB6D600FE2C73 /* HVD Fonts - BrandonText-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HVD Fonts - BrandonText-Medium.otf"; sourceTree = "<group>"; };
+		E4D80E851F18EC3B00C09B6F /* shortcutTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = shortcutTableViewCell.swift; sourceTree = "<group>"; };
+		E4D80E871F18F26700C09B6F /* demo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = demo.jpg; sourceTree = "<group>"; };
+		E4D80E891F18F93B00C09B6F /* petStuffTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = petStuffTableViewCell.swift; sourceTree = "<group>"; };
+		E4D80E8B1F19119200C09B6F /* subMenuTitleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = subMenuTitleTableViewCell.swift; sourceTree = "<group>"; };
+		E4D80E8D1F191D1700C09B6F /* demoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = demoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +122,7 @@
 				E49CB8311EEFB36E00FE2C73 /* Info.plist */,
 				E4768C881EF86B0B003D2506 /* .gitignore */,
 				E4768C701EF7FB98003D2506 /* tutSample1.mov */,
+				E4D80E871F18F26700C09B6F /* demo.jpg */,
 			);
 			name = "Supporting files";
 			sourceTree = "<group>";
@@ -111,8 +130,11 @@
 		E4768C851EF86988003D2506 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				E49B88DA1F18C20A006451AB /* SWRevealViewController.h */,
+				E49B88DB1F18C20A006451AB /* SWRevealViewController.m */,
 				E418C4DE1EF6FD2D00B02C47 /* Colors.swift */,
 				E4768C721EF80F15003D2506 /* Helpers.swift */,
+				E49B88D91F18C208006451AB /* PetOye-Bridging-Header.h */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -132,6 +154,7 @@
 		E4768C871EF869B1003D2506 /* PetOye app v1 */ = {
 			isa = PBXGroup;
 			children = (
+				E4D80E8D1F191D1700C09B6F /* demoViewController.swift */,
 				E4768C861EF869A2003D2506 /* Intro */,
 				E4F5DA8F1EFB77CC00801431 /* Home */,
 			);
@@ -191,6 +214,11 @@
 		E4F5DA8F1EFB77CC00801431 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				E4D80E8B1F19119200C09B6F /* subMenuTitleTableViewCell.swift */,
+				E4D80E891F18F93B00C09B6F /* petStuffTableViewCell.swift */,
+				E4D80E851F18EC3B00C09B6F /* shortcutTableViewCell.swift */,
+				E49B88DD1F18D279006451AB /* hamburgerMenuViewController.swift */,
+				E49B88DF1F18E006006451AB /* hamUserInfoTableViewCell.swift */,
 				E4768C8A1EF929E2003D2506 /* homeViewController.swift */,
 			);
 			name = Home;
@@ -232,6 +260,7 @@
 					E49CB8211EEFB36E00FE2C73 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = JC959F8T7E;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -263,6 +292,7 @@
 				E49CB83E1EEFB6DB00FE2C73 /* HVD Fonts - BrandonText-Medium.otf in Resources */,
 				E4768C7B1EF86041003D2506 /* Home.storyboard in Resources */,
 				E49CB83C1EEFB6C800FE2C73 /* HVD Fonts - BrandonText-Bold.otf in Resources */,
+				E4D80E881F18F26700C09B6F /* demo.jpg in Resources */,
 				E4768C791EF85EDE003D2506 /* Intro.storyboard in Resources */,
 				E4768C7F1EF86915003D2506 /* StoriesTab.storyboard in Resources */,
 				E49CB83A1EEFB6AF00FE2C73 /* HVD Fonts - BrandonText-Light.otf in Resources */,
@@ -333,14 +363,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E49B88DE1F18D279006451AB /* hamburgerMenuViewController.swift in Sources */,
 				E49CB8281EEFB36E00FE2C73 /* ViewController.swift in Sources */,
+				E4D80E861F18EC3B00C09B6F /* shortcutTableViewCell.swift in Sources */,
 				E4768C8B1EF929E2003D2506 /* homeViewController.swift in Sources */,
 				E4768C751EF823DE003D2506 /* basicInfoViewController.swift in Sources */,
 				E4768C771EF838FF003D2506 /* userTypeTableViewCell.swift in Sources */,
 				E4768C731EF80F15003D2506 /* Helpers.swift in Sources */,
+				E4D80E8E1F191D1700C09B6F /* demoViewController.swift in Sources */,
 				E418C4DF1EF6FD2D00B02C47 /* Colors.swift in Sources */,
 				E49CB8261EEFB36E00FE2C73 /* AppDelegate.swift in Sources */,
+				E49B88DC1F18C20A006451AB /* SWRevealViewController.m in Sources */,
+				E49B88E01F18E006006451AB /* hamUserInfoTableViewCell.swift in Sources */,
 				E418C4DD1EF6FA7A00B02C47 /* introViewController.swift in Sources */,
+				E4D80E8A1F18F93B00C09B6F /* petStuffTableViewCell.swift in Sources */,
+				E4D80E8C1F19119200C09B6F /* subMenuTitleTableViewCell.swift in Sources */,
 				E4768C6F1EF771DE003D2506 /* loginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -465,6 +502,7 @@
 			baseConfigurationReference = CF8796C3148C2DBDA68187DA /* Pods-PetOye.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEBUG_ACTIVITY_MODE = "";
 				"DEBUG_ACTIVITY_MODE[sdk=iphonesimulator*]" = disable;
 				DEVELOPMENT_TEAM = JC959F8T7E;
@@ -473,6 +511,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vit.PetOye;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PetOye/PetOye-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -482,6 +522,7 @@
 			baseConfigurationReference = 9DDCA9B1A44F7B9CFA8902CC /* Pods-PetOye.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEBUG_ACTIVITY_MODE = "";
 				DEVELOPMENT_TEAM = JC959F8T7E;
 				ENABLE_BITCODE = NO;
@@ -489,6 +530,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vit.PetOye;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PetOye/PetOye-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
