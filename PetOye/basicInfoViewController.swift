@@ -67,6 +67,11 @@ class basicInfoViewController: UIViewController, UITableViewDelegate, UITableVie
         breedLine.isHidden = true
         
         breedButton.isHidden = true
+        
+        if let user = UserDefaults.standard.value(forKey: "user_name") as? String {
+            
+            username.text = user.lowercased().replacingOccurrences(of: " ", with: "_")
+        }
 
         self.hideKeyboardWhenTappedAround()
     }

@@ -8,5 +8,8 @@ target 'PetOye' do
   # Pods for PetOye
 
   pod 'Toast-Swift', '~> 2.0.0'
+  pod 'FacebookCore'
+  pod 'FacebookLogin'
+  pod 'FacebookShare'
 
 end

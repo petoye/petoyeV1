@@ -22,6 +22,8 @@
 		E4768C811EF86930003D2506 /* NotificationsTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4768C801EF86930003D2506 /* NotificationsTab.storyboard */; };
 		E4768C831EF86947003D2506 /* MeTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4768C821EF86947003D2506 /* MeTab.storyboard */; };
 		E4768C891EF86B0B003D2506 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = E4768C881EF86B0B003D2506 /* .gitignore */; };
+		E4768C8B1EF929E2003D2506 /* homeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4768C8A1EF929E2003D2506 /* homeViewController.swift */; };
+		E49B88D81F18B74C006451AB /* Explore.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E49B88D71F18B74C006451AB /* Explore.storyboard */; };
 		E49CB8261EEFB36E00FE2C73 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49CB8251EEFB36E00FE2C73 /* AppDelegate.swift */; };
 		E49CB8281EEFB36E00FE2C73 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49CB8271EEFB36E00FE2C73 /* ViewController.swift */; };
 		E49CB82B1EEFB36E00FE2C73 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E49CB8291EEFB36E00FE2C73 /* Main.storyboard */; };
@@ -51,6 +53,8 @@
 		E4768C801EF86930003D2506 /* NotificationsTab.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = NotificationsTab.storyboard; sourceTree = "<group>"; };
 		E4768C821EF86947003D2506 /* MeTab.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MeTab.storyboard; sourceTree = "<group>"; };
 		E4768C881EF86B0B003D2506 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		E4768C8A1EF929E2003D2506 /* homeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = homeViewController.swift; sourceTree = "<group>"; };
+		E49B88D71F18B74C006451AB /* Explore.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Explore.storyboard; sourceTree = "<group>"; };
 		E49CB8221EEFB36E00FE2C73 /* PetOye.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PetOye.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E49CB8251EEFB36E00FE2C73 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E49CB8271EEFB36E00FE2C73 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -96,8 +100,10 @@
 		E4768C841EF86969003D2506 /* Supporting files */ = {
 			isa = PBXGroup;
 			children = (
+				E49CB8251EEFB36E00FE2C73 /* AppDelegate.swift */,
+				E49CB8311EEFB36E00FE2C73 /* Info.plist */,
+				E4768C881EF86B0B003D2506 /* .gitignore */,
 				E4768C701EF7FB98003D2506 /* tutSample1.mov */,
-				E49CB83F1EEFB6E000FE2C73 /* Fonts */,
 			);
 			name = "Supporting files";
 			sourceTree = "<group>";
@@ -119,7 +125,6 @@
 				E4768C6E1EF771DE003D2506 /* loginViewController.swift */,
 				E418C4DC1EF6FA7A00B02C47 /* introViewController.swift */,
 				E4768C761EF838FF003D2506 /* userTypeTableViewCell.swift */,
-				E4768C841EF86969003D2506 /* Supporting files */,
 			);
 			name = Intro;
 			sourceTree = "<group>";
@@ -128,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				E4768C861EF869A2003D2506 /* Intro */,
+				E4F5DA8F1EFB77CC00801431 /* Home */,
 			);
 			name = "PetOye app v1";
 			sourceTree = "<group>";
@@ -155,18 +161,18 @@
 			children = (
 				E4768C871EF869B1003D2506 /* PetOye app v1 */,
 				E4768C851EF86988003D2506 /* Helpers */,
-				E49CB8251EEFB36E00FE2C73 /* AppDelegate.swift */,
+				E4768C841EF86969003D2506 /* Supporting files */,
+				E49CB83F1EEFB6E000FE2C73 /* Fonts */,
 				E49CB8291EEFB36E00FE2C73 /* Main.storyboard */,
 				E4768C781EF85EDE003D2506 /* Intro.storyboard */,
 				E4768C7A1EF86041003D2506 /* Home.storyboard */,
+				E4768C7C1EF868F6003D2506 /* HomeTab.storyboard */,
+				E49B88D71F18B74C006451AB /* Explore.storyboard */,
 				E4768C821EF86947003D2506 /* MeTab.storyboard */,
 				E4768C801EF86930003D2506 /* NotificationsTab.storyboard */,
 				E4768C7E1EF86915003D2506 /* StoriesTab.storyboard */,
-				E4768C7C1EF868F6003D2506 /* HomeTab.storyboard */,
-				E4768C881EF86B0B003D2506 /* .gitignore */,
 				E49CB82C1EEFB36E00FE2C73 /* Assets.xcassets */,
 				E49CB82E1EEFB36E00FE2C73 /* LaunchScreen.storyboard */,
-				E49CB8311EEFB36E00FE2C73 /* Info.plist */,
 			);
 			path = PetOye;
 			sourceTree = "<group>";
@@ -180,6 +186,14 @@
 				E49CB83D1EEFB6D600FE2C73 /* HVD Fonts - BrandonText-Medium.otf */,
 			);
 			name = Fonts;
+			sourceTree = "<group>";
+		};
+		E4F5DA8F1EFB77CC00801431 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				E4768C8A1EF929E2003D2506 /* homeViewController.swift */,
+			);
+			name = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,6 +267,7 @@
 				E4768C7F1EF86915003D2506 /* StoriesTab.storyboard in Resources */,
 				E49CB83A1EEFB6AF00FE2C73 /* HVD Fonts - BrandonText-Light.otf in Resources */,
 				E4768C7D1EF868F6003D2506 /* HomeTab.storyboard in Resources */,
+				E49B88D81F18B74C006451AB /* Explore.storyboard in Resources */,
 				E49CB8381EEFB69500FE2C73 /* HVD Fonts - BrandonText-Regular.otf in Resources */,
 				E49CB8301EEFB36E00FE2C73 /* LaunchScreen.storyboard in Resources */,
 				E4768C891EF86B0B003D2506 /* .gitignore in Resources */,
@@ -319,6 +334,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E49CB8281EEFB36E00FE2C73 /* ViewController.swift in Sources */,
+				E4768C8B1EF929E2003D2506 /* homeViewController.swift in Sources */,
 				E4768C751EF823DE003D2506 /* basicInfoViewController.swift in Sources */,
 				E4768C771EF838FF003D2506 /* userTypeTableViewCell.swift in Sources */,
 				E4768C731EF80F15003D2506 /* Helpers.swift in Sources */,
@@ -449,6 +465,8 @@
 			baseConfigurationReference = CF8796C3148C2DBDA68187DA /* Pods-PetOye.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEBUG_ACTIVITY_MODE = "";
+				"DEBUG_ACTIVITY_MODE[sdk=iphonesimulator*]" = disable;
 				DEVELOPMENT_TEAM = JC959F8T7E;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = PetOye/Info.plist;
@@ -464,6 +482,7 @@
 			baseConfigurationReference = 9DDCA9B1A44F7B9CFA8902CC /* Pods-PetOye.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEBUG_ACTIVITY_MODE = "";
 				DEVELOPMENT_TEAM = JC959F8T7E;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = PetOye/Info.plist;

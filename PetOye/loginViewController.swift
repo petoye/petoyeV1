@@ -9,6 +9,7 @@
 import UIKit
 
 import Toast_Swift
+import FBSDKLoginKit
 
 class loginViewController: UIViewController {
     
@@ -83,6 +84,27 @@ class loginViewController: UIViewController {
         
     }
     
+    @IBAction func fbButtonPressed(_ sender: Any) {
+            
+        let fbLoginManager : FBSDKLoginManager = FBSDKLoginManager()
+        
+        fbLoginManager.logIn(withReadPermissions: ["email","user_friends"], from: self) { (result, error) -> Void in
+            if (error == nil){
+                
+                let fbloginresult : FBSDKLoginManagerLoginResult = result!
+                
+                if(fbloginresult.grantedPermissions != nil && fbloginresult.grantedPermissions.contains("email"))
+                {
+                    // login success
+                    
+                    self.performSegue(withIdentifier: "oldUserToHome", sender: self)
+                }
+            }
+        }
+        
+    }
+    
+    
     func loginButtonSetup() {
         
         loginButton.setTitleColor(self.HEX57A784(), for: .normal)
@@ -140,6 +162,11 @@ class loginViewController: UIViewController {
         passwordLine.frame.origin.y -= 50
         
         confirmPassword()
+        
+        if let user_email = UserDefaults.standard.value(forKey: "user_email") as? String {
+            
+            emailTextfield.text = user_email
+        }
     }
     
     func confirmPassword() {
@@ -222,6 +249,8 @@ class loginViewController: UIViewController {
         else {
             
             //old user login
+            
+            
             
             self.performSegue(withIdentifier: "oldUserToHome", sender: self)
         }

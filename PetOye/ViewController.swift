@@ -146,6 +146,20 @@ class ViewController: UIViewController, UIScrollViewDelegate {
     @IBAction func nextButton(_ sender: Any) {
         
         playVid()
+
+        if Int(pageControl.currentPage) == 0{
+            
+            textDesc.text = "Hassle free adoptions"
+        }
+        else if Int(pageControl.currentPage) == 1{
+            
+            textDesc.text = "Hundreds of pet care options"
+        }
+        else {
+            
+            textDesc.text = "Get your queries answered"
+        }
+
         
         count = pageControl.currentPage + 1
 
@@ -155,7 +169,8 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         
         if count < 4 {
             
-            tutorialScroll.contentOffset = CGPoint(x: self.view.frame.size.width * CGFloat(pageControl.currentPage), y: 0)
+        tutorialScroll.setContentOffset(CGPoint(x: self.view.frame.size.width * CGFloat(pageControl.currentPage), y: 0), animated: true)
+            
         }
         else if count == 4 {
             

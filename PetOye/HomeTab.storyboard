@@ -8,11 +8,19 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="HVD Fonts - BrandonText-Bold.otf">
+            <string>BrandonText-Bold</string>
+        </array>
+        <array key="HVD Fonts - BrandonText-Regular.otf">
+            <string>BrandonText-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--HOME-->
         <scene sceneID="CAG-E7-suF">
             <objects>
-                <viewController id="EzJ-7P-peP" sceneMemberID="viewController">
+                <viewController id="EzJ-7P-peP" customClass="homeViewController" customModule="PetOye" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="vqx-0E-6aT"/>
                         <viewControllerLayoutGuide type="bottom" id="Z0u-C2-imI"/>
@@ -20,7 +28,54 @@
                     <view key="view" contentMode="scaleToFill" id="7ku-Gz-HUi">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hIr-AM-oSM">
+                                <rect key="frame" x="368" y="20" width="39" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="msg"/>
+                                <connections>
+                                    <action selector="messageButtonPressed:" destination="EzJ-7P-peP" eventType="touchUpInside" id="akI-Y4-SAG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VUL-Ma-aPS">
+                                <rect key="frame" x="14" y="22" width="36" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="ham"/>
+                                <connections>
+                                    <action selector="hamburgerButtonPressed:" destination="EzJ-7P-peP" eventType="touchUpInside" id="1w1-j7-uL1"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7xi-xe-QDQ">
+                                <rect key="frame" x="15" y="65" width="387" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Search on PetOye" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9rk-hi-rcg">
+                                        <rect key="frame" x="14" y="8" width="325" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" name="BrandonText-Regular" family="Brandon Text" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="search"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="irt-J0-CTZ">
+                                        <rect key="frame" x="347" y="7" width="29" height="32"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="bookmark"/>
+                                        <connections>
+                                            <action selector="bookmarkButtonPressed:" destination="EzJ-7P-peP" eventType="touchUpInside" id="78g-vb-GdL"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PetOye" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BHa-gb-9pU">
+                                <rect key="frame" x="168" y="21" width="79" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="BrandonText-Bold" family="Brandon Text" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96853226420000005" green="0.96869415039999995" blue="0.96851092579999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="HOME" image="homeUnselected" selectedImage="homeSelected" id="IBY-16-mNe">
                         <userDefinedRuntimeAttributes>
@@ -32,14 +87,20 @@
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="414" height="736"/>
+                    <connections>
+                        <outlet property="searchView" destination="7xi-xe-QDQ" id="dAt-Li-b9h"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OfB-NV-Xah" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1193" y="-943"/>
+            <point key="canvasLocation" x="-1558" y="-954"/>
         </scene>
     </scenes>
     <resources>
+        <image name="bookmark" width="19" height="22"/>
+        <image name="ham" width="23" height="17"/>
         <image name="homeSelected" width="24" height="24"/>
         <image name="homeUnselected" width="24" height="24"/>
+        <image name="msg" width="26" height="23"/>
     </resources>
 </document>

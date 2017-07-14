@@ -39,6 +39,10 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </scrollView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hand" translatesAutoresizingMaskIntoConstraints="NO" id="8Gx-fe-iQz">
+                                <rect key="frame" x="0.0" y="230" width="347" height="457"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cyn-Dp-TYG">
                                 <rect key="frame" x="0.0" y="686" width="414" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -64,15 +68,6 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hand" translatesAutoresizingMaskIntoConstraints="NO" id="8Gx-fe-iQz">
-                                <rect key="frame" x="0.0" y="230" width="347" height="457"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Otm-Kd-ihB">
-                                <rect key="frame" x="123" y="277" width="180" height="323"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pocket friendly pet-care" textAlignment="center" lineBreakMode="headTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mtI-yO-nz2">
                                 <rect key="frame" x="20" y="30" width="374" height="93"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -80,6 +75,11 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Otm-Kd-ihB">
+                                <rect key="frame" x="123.5" y="280" width="180" height="319"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -236,6 +236,9 @@
                                 <state key="normal" title="Connect with Facebook">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="fbButtonPressed:" destination="dmy-i6-UyG" eventType="touchUpInside" id="Hbk-JO-jZV"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Uxg-w8-nrp">
                                 <rect key="frame" x="40" y="270" width="334" height="315"/>
@@ -291,7 +294,6 @@
                                         </state>
                                         <connections>
                                             <action selector="logInButtonPressed:" destination="dmy-i6-UyG" eventType="touchUpInside" id="gk4-bf-ub3"/>
-                                            <segue destination="f2g-UR-YjK" kind="show" identifier="oldUserToHome" id="x0o-kX-c8W"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2uN-fF-Oxs">
@@ -369,6 +371,7 @@
                         <outlet property="tsLabel" destination="mkF-o5-5Pg" id="J05-58-mMU"/>
                         <outlet property="welcomeLabel" destination="ESN-uW-nBW" id="dyN-cA-AQE"/>
                         <segue destination="LEu-qX-ony" kind="show" identifier="basicInfo" id="wez-O8-JaM"/>
+                        <segue destination="f2g-UR-YjK" kind="show" identifier="oldUserToHome" id="4ge-9E-vHc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Dz-PR-huz" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -595,7 +598,7 @@
     <resources>
         <image name="back" width="11" height="17"/>
         <image name="down" width="21" height="14"/>
-        <image name="hand" width="1046" height="1369"/>
+        <image name="hand" width="2106" height="2739"/>
         <image name="img1" width="73" height="73"/>
         <image name="img2" width="74" height="73"/>
         <image name="img3" width="74" height="73"/>
@@ -604,7 +607,7 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="byl-J1-ni9"/>
-        <segue reference="NUZ-Z6-7DO"/>
-        <segue reference="x0o-kX-c8W"/>
+        <segue reference="Dif-IQ-r7S"/>
+        <segue reference="eoi-PV-hEz"/>
     </inferredMetricsTieBreakers>
 </document>
