@@ -18,8 +18,8 @@ class hamburgerMenuViewController: UIViewController, UITableViewDelegate, UITabl
     
     @IBOutlet weak var menuConstraint: NSLayoutConstraint!
     
-    var header = ["Pet Care","Pet Leisure","My Adoptions","Online Orders","More"]
-    var info = ["Vets, Groomers, Trainers, etc.", "Cafes, Events, etc.", "", "Order history, payment options, etc.", "About us, Contact us, Add a service, etc."]
+    var header = ["Home","Pet Care","Pet Leisure","My Adoptions","Online Orders","More"]
+    var info = ["","Vets, Groomers, Trainers, etc.", "Cafes, Events, etc.", "", "Order history, payment options, etc.", "About us, Contact us, Add a service, etc."]
     
     var petCare = ["Vets","Groomers","Trainers","Behaviourists","Shops","Walkers","Boarding","Foster Homes"]
     
@@ -36,6 +36,8 @@ class hamburgerMenuViewController: UIViewController, UITableViewDelegate, UITabl
 
         menuTable.tableFooterView = UIView(frame: CGRect.zero)
         
+        subMenuTable.tableFooterView = UIView(frame: CGRect.zero)
+        
         subMenuTable.isHidden = true
     }
     
@@ -48,7 +50,7 @@ class hamburgerMenuViewController: UIViewController, UITableViewDelegate, UITabl
         
         if tableView == menuTable {
             
-            return 8
+            return header.count + 3
         }
         else {
             
@@ -137,7 +139,7 @@ class hamburgerMenuViewController: UIViewController, UITableViewDelegate, UITabl
                 
                 cell.header.text = header[indexPath.row - 3]
                 
-                if indexPath.row != 5 {
+                if (indexPath.row == 4 || indexPath.row == 5) || (indexPath.row == 7 || indexPath.row == 8) {
                     
                     cell.accessoryType = .disclosureIndicator
                     
@@ -229,31 +231,38 @@ class hamburgerMenuViewController: UIViewController, UITableViewDelegate, UITabl
             
             if indexPath.row == 3 {
                 
+                if let vc = storyboard?.instantiateViewController(withIdentifier: "Home") as? homeViewController {
+                    
+                    self.revealViewController().pushFrontViewController(vc, animated: true)
+                }
+            }
+            else if indexPath.row == 4 {
+                
                 tableType = 1
                 
                 subMenu()
         
             }
-            else if indexPath.row == 4 {
+            else if indexPath.row == 5 {
                 
                 tableType = 2
                 
                 subMenu()
             }
-            else if indexPath.row == 5 {
+            else if indexPath.row == 6 {
                 
 
 //                let vc = storyboard?.instantiateViewController(withIdentifier: "demo") as! demoViewController
 //                
 //                self.revealViewController().pushFrontViewController(vc, animated: true)
             }
-            else if indexPath.row == 6 {
+            else if indexPath.row == 7 {
                 
                 tableType = 3
                 
                 subMenu()
             }
-            else if indexPath.row == 7 {
+            else if indexPath.row == 8 {
                 
                 tableType = 4
                 

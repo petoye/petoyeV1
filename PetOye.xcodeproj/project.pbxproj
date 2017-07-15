@@ -10,6 +10,13 @@
 		9CF748533FC94194916197EE /* Pods_PetOye.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FD0AD1B655AFF41BBB31D5A /* Pods_PetOye.framework */; };
 		E418C4DD1EF6FA7A00B02C47 /* introViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E418C4DC1EF6FA7A00B02C47 /* introViewController.swift */; };
 		E418C4DF1EF6FD2D00B02C47 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E418C4DE1EF6FD2D00B02C47 /* Colors.swift */; };
+		E43CA86B1F19FDEC00FD764E /* bookmarkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43CA86A1F19FDEC00FD764E /* bookmarkViewController.swift */; };
+		E43CA86D1F19FF6F00FD764E /* serviceInBookmarkTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43CA86C1F19FF6F00FD764E /* serviceInBookmarkTableViewController.swift */; };
+		E43CA86F1F1A0F8000FD764E /* questionsInBookmarkTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43CA86E1F1A0F8000FD764E /* questionsInBookmarkTableViewController.swift */; };
+		E43CA8711F1A11B600FD764E /* placesInBookmarkTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43CA8701F1A11B600FD764E /* placesInBookmarkTableViewController.swift */; };
+		E43CA8731F1A126E00FD764E /* adoptionInBookmarksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43CA8721F1A126E00FD764E /* adoptionInBookmarksTableViewController.swift */; };
+		E43CA8751F1A12F300FD764E /* eventsInBookmarksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43CA8741F1A12F300FD764E /* eventsInBookmarksTableViewController.swift */; };
+		E43CA8771F1A1B0800FD764E /* bookmarksTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43CA8761F1A1B0800FD764E /* bookmarksTableViewCell.swift */; };
 		E4768C6F1EF771DE003D2506 /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4768C6E1EF771DE003D2506 /* loginViewController.swift */; };
 		E4768C711EF7FB98003D2506 /* tutSample1.mov in Resources */ = {isa = PBXBuildFile; fileRef = E4768C701EF7FB98003D2506 /* tutSample1.mov */; };
 		E4768C731EF80F15003D2506 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4768C721EF80F15003D2506 /* Helpers.swift */; };
@@ -40,7 +47,6 @@
 		E4D80E881F18F26700C09B6F /* demo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E4D80E871F18F26700C09B6F /* demo.jpg */; };
 		E4D80E8A1F18F93B00C09B6F /* petStuffTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D80E891F18F93B00C09B6F /* petStuffTableViewCell.swift */; };
 		E4D80E8C1F19119200C09B6F /* subMenuTitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D80E8B1F19119200C09B6F /* subMenuTitleTableViewCell.swift */; };
-		E4D80E8E1F191D1700C09B6F /* demoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D80E8D1F191D1700C09B6F /* demoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +55,13 @@
 		CF8796C3148C2DBDA68187DA /* Pods-PetOye.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PetOye.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PetOye/Pods-PetOye.debug.xcconfig"; sourceTree = "<group>"; };
 		E418C4DC1EF6FA7A00B02C47 /* introViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = introViewController.swift; sourceTree = "<group>"; };
 		E418C4DE1EF6FD2D00B02C47 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		E43CA86A1F19FDEC00FD764E /* bookmarkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = bookmarkViewController.swift; sourceTree = "<group>"; };
+		E43CA86C1F19FF6F00FD764E /* serviceInBookmarkTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = serviceInBookmarkTableViewController.swift; sourceTree = "<group>"; };
+		E43CA86E1F1A0F8000FD764E /* questionsInBookmarkTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = questionsInBookmarkTableViewController.swift; sourceTree = "<group>"; };
+		E43CA8701F1A11B600FD764E /* placesInBookmarkTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = placesInBookmarkTableViewController.swift; sourceTree = "<group>"; };
+		E43CA8721F1A126E00FD764E /* adoptionInBookmarksTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = adoptionInBookmarksTableViewController.swift; sourceTree = "<group>"; };
+		E43CA8741F1A12F300FD764E /* eventsInBookmarksTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = eventsInBookmarksTableViewController.swift; sourceTree = "<group>"; };
+		E43CA8761F1A1B0800FD764E /* bookmarksTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = bookmarksTableViewCell.swift; sourceTree = "<group>"; };
 		E4768C6E1EF771DE003D2506 /* loginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
 		E4768C701EF7FB98003D2506 /* tutSample1.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = tutSample1.mov; sourceTree = "<group>"; };
 		E4768C721EF80F15003D2506 /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
@@ -83,7 +96,6 @@
 		E4D80E871F18F26700C09B6F /* demo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = demo.jpg; sourceTree = "<group>"; };
 		E4D80E891F18F93B00C09B6F /* petStuffTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = petStuffTableViewCell.swift; sourceTree = "<group>"; };
 		E4D80E8B1F19119200C09B6F /* subMenuTitleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = subMenuTitleTableViewCell.swift; sourceTree = "<group>"; };
-		E4D80E8D1F191D1700C09B6F /* demoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = demoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +127,45 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		E43CA8661F19F1E100FD764E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E49B88DD1F18D279006451AB /* hamburgerMenuViewController.swift */,
+				E4768C8A1EF929E2003D2506 /* homeViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		E43CA8671F19F1F000FD764E /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				E49B88DF1F18E006006451AB /* hamUserInfoTableViewCell.swift */,
+				E4D80E851F18EC3B00C09B6F /* shortcutTableViewCell.swift */,
+				E4D80E891F18F93B00C09B6F /* petStuffTableViewCell.swift */,
+				E4D80E8B1F19119200C09B6F /* subMenuTitleTableViewCell.swift */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		E43CA8681F19F21300FD764E /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				E4768C761EF838FF003D2506 /* userTypeTableViewCell.swift */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		E43CA8691F19F21F00FD764E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E49CB8271EEFB36E00FE2C73 /* ViewController.swift */,
+				E4768C741EF823DE003D2506 /* basicInfoViewController.swift */,
+				E4768C6E1EF771DE003D2506 /* loginViewController.swift */,
+				E418C4DC1EF6FA7A00B02C47 /* introViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
 		E4768C841EF86969003D2506 /* Supporting files */ = {
 			isa = PBXGroup;
 			children = (
@@ -142,11 +193,8 @@
 		E4768C861EF869A2003D2506 /* Intro */ = {
 			isa = PBXGroup;
 			children = (
-				E49CB8271EEFB36E00FE2C73 /* ViewController.swift */,
-				E4768C741EF823DE003D2506 /* basicInfoViewController.swift */,
-				E4768C6E1EF771DE003D2506 /* loginViewController.swift */,
-				E418C4DC1EF6FA7A00B02C47 /* introViewController.swift */,
-				E4768C761EF838FF003D2506 /* userTypeTableViewCell.swift */,
+				E43CA8691F19F21F00FD764E /* Controllers */,
+				E43CA8681F19F21300FD764E /* Cells */,
 			);
 			name = Intro;
 			sourceTree = "<group>";
@@ -154,7 +202,6 @@
 		E4768C871EF869B1003D2506 /* PetOye app v1 */ = {
 			isa = PBXGroup;
 			children = (
-				E4D80E8D1F191D1700C09B6F /* demoViewController.swift */,
 				E4768C861EF869A2003D2506 /* Intro */,
 				E4F5DA8F1EFB77CC00801431 /* Home */,
 			);
@@ -214,12 +261,15 @@
 		E4F5DA8F1EFB77CC00801431 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				E4D80E8B1F19119200C09B6F /* subMenuTitleTableViewCell.swift */,
-				E4D80E891F18F93B00C09B6F /* petStuffTableViewCell.swift */,
-				E4D80E851F18EC3B00C09B6F /* shortcutTableViewCell.swift */,
-				E49B88DD1F18D279006451AB /* hamburgerMenuViewController.swift */,
-				E49B88DF1F18E006006451AB /* hamUserInfoTableViewCell.swift */,
-				E4768C8A1EF929E2003D2506 /* homeViewController.swift */,
+				E43CA8761F1A1B0800FD764E /* bookmarksTableViewCell.swift */,
+				E43CA8701F1A11B600FD764E /* placesInBookmarkTableViewController.swift */,
+				E43CA8721F1A126E00FD764E /* adoptionInBookmarksTableViewController.swift */,
+				E43CA8741F1A12F300FD764E /* eventsInBookmarksTableViewController.swift */,
+				E43CA86E1F1A0F8000FD764E /* questionsInBookmarkTableViewController.swift */,
+				E43CA86A1F19FDEC00FD764E /* bookmarkViewController.swift */,
+				E43CA86C1F19FF6F00FD764E /* serviceInBookmarkTableViewController.swift */,
+				E43CA8671F19F1F000FD764E /* Cells */,
+				E43CA8661F19F1E100FD764E /* Controllers */,
 			);
 			name = Home;
 			sourceTree = "<group>";
@@ -363,22 +413,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E43CA8751F1A12F300FD764E /* eventsInBookmarksTableViewController.swift in Sources */,
 				E49B88DE1F18D279006451AB /* hamburgerMenuViewController.swift in Sources */,
 				E49CB8281EEFB36E00FE2C73 /* ViewController.swift in Sources */,
 				E4D80E861F18EC3B00C09B6F /* shortcutTableViewCell.swift in Sources */,
 				E4768C8B1EF929E2003D2506 /* homeViewController.swift in Sources */,
 				E4768C751EF823DE003D2506 /* basicInfoViewController.swift in Sources */,
 				E4768C771EF838FF003D2506 /* userTypeTableViewCell.swift in Sources */,
+				E43CA86F1F1A0F8000FD764E /* questionsInBookmarkTableViewController.swift in Sources */,
 				E4768C731EF80F15003D2506 /* Helpers.swift in Sources */,
-				E4D80E8E1F191D1700C09B6F /* demoViewController.swift in Sources */,
 				E418C4DF1EF6FD2D00B02C47 /* Colors.swift in Sources */,
 				E49CB8261EEFB36E00FE2C73 /* AppDelegate.swift in Sources */,
 				E49B88DC1F18C20A006451AB /* SWRevealViewController.m in Sources */,
 				E49B88E01F18E006006451AB /* hamUserInfoTableViewCell.swift in Sources */,
 				E418C4DD1EF6FA7A00B02C47 /* introViewController.swift in Sources */,
+				E43CA86B1F19FDEC00FD764E /* bookmarkViewController.swift in Sources */,
+				E43CA86D1F19FF6F00FD764E /* serviceInBookmarkTableViewController.swift in Sources */,
 				E4D80E8A1F18F93B00C09B6F /* petStuffTableViewCell.swift in Sources */,
+				E43CA8731F1A126E00FD764E /* adoptionInBookmarksTableViewController.swift in Sources */,
 				E4D80E8C1F19119200C09B6F /* subMenuTitleTableViewCell.swift in Sources */,
+				E43CA8711F1A11B600FD764E /* placesInBookmarkTableViewController.swift in Sources */,
 				E4768C6F1EF771DE003D2506 /* loginViewController.swift in Sources */,
+				E43CA8771F1A1B0800FD764E /* bookmarksTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
