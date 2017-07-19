@@ -45,6 +45,12 @@ class homeViewController: UIViewController {
         view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         
         navigationBar.tintColor = UIColor.clear
+        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        
+        self.navigationController?.navigationBar.barStyle = .default
     }
     
     

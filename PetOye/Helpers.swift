@@ -24,4 +24,13 @@ extension UIViewController {
         
         return CGPoint(x: self.view.frame.midX, y: self.view.frame.size.height - 150)
     }
+    
+    func box(text: String, fontSize: CGFloat, fontName: String) -> (CGFloat,CGFloat) {
+        
+        let someString = text
+        let yourFont = UIFont(name: fontName, size: fontSize)
+        let stringBoundingBox = someString.size(attributes: [NSFontAttributeName : yourFont])
+        
+        return (stringBoundingBox.width,stringBoundingBox.height)
+    }
 }

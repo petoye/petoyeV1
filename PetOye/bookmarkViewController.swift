@@ -21,6 +21,12 @@ class bookmarkViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         tabSetup()
+        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        
+        self.navigationController?.navigationBar.barStyle = .default
     }
     
     func tabSetup() {

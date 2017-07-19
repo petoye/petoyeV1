@@ -12,4 +12,7 @@ target 'PetOye' do
   pod 'FacebookLogin'
   pod 'FacebookShare'
   pod 'PageMenu'
+  pod ‘JSQMessagesViewController’
+  pod 'SJFluidSegmentedControl', '~> 1.0'
+  pod ‘ExpandableLabel’
 end

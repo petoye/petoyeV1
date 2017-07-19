@@ -17,6 +17,16 @@
 		E43CA8731F1A126E00FD764E /* adoptionInBookmarksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43CA8721F1A126E00FD764E /* adoptionInBookmarksTableViewController.swift */; };
 		E43CA8751F1A12F300FD764E /* eventsInBookmarksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43CA8741F1A12F300FD764E /* eventsInBookmarksTableViewController.swift */; };
 		E43CA8771F1A1B0800FD764E /* bookmarksTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43CA8761F1A1B0800FD764E /* bookmarksTableViewCell.swift */; };
+		E43CA8791F1A32D800FD764E /* allChatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43CA8781F1A32D800FD764E /* allChatsViewController.swift */; };
+		E43CA87B1F1A365100FD764E /* SourceSansPro-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E43CA87A1F1A361800FD764E /* SourceSansPro-Regular.ttf */; };
+		E43CA87D1F1A399600FD764E /* chatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43CA87C1F1A399600FD764E /* chatTableViewCell.swift */; };
+		E43CA87F1F1A5C9500FD764E /* oneChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43CA87E1F1A5C9500FD764E /* oneChatViewController.swift */; };
+		E43CA8811F1BC5ED00FD764E /* exploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43CA8801F1BC5ED00FD764E /* exploreViewController.swift */; };
+		E43CA8831F1C6C4D00FD764E /* questionOnlyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43CA8821F1C6C4D00FD764E /* questionOnlyTableViewCell.swift */; };
+		E43CA8861F1C742E00FD764E /* exploreTVDSDL.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43CA8851F1C742E00FD764E /* exploreTVDSDL.swift */; };
+		E43CA8881F1CF3AA00FD764E /* tookToServiceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43CA8871F1CF3AA00FD764E /* tookToServiceTableViewCell.swift */; };
+		E43CA88A1F1D138800FD764E /* doggo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E43CA8891F1D138800FD764E /* doggo.jpg */; };
+		E43CA88C1F1D13FC00FD764E /* imagesInExploreCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43CA88B1F1D13FC00FD764E /* imagesInExploreCollectionViewCell.swift */; };
 		E4768C6F1EF771DE003D2506 /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4768C6E1EF771DE003D2506 /* loginViewController.swift */; };
 		E4768C711EF7FB98003D2506 /* tutSample1.mov in Resources */ = {isa = PBXBuildFile; fileRef = E4768C701EF7FB98003D2506 /* tutSample1.mov */; };
 		E4768C731EF80F15003D2506 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4768C721EF80F15003D2506 /* Helpers.swift */; };
@@ -30,6 +40,21 @@
 		E4768C831EF86947003D2506 /* MeTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4768C821EF86947003D2506 /* MeTab.storyboard */; };
 		E4768C891EF86B0B003D2506 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = E4768C881EF86B0B003D2506 /* .gitignore */; };
 		E4768C8B1EF929E2003D2506 /* homeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4768C8A1EF929E2003D2506 /* homeViewController.swift */; };
+		E490B55F1F1E358A0002AC83 /* PinterestLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = E490B55E1F1E358A0002AC83 /* PinterestLayout.swift */; };
+		E490B5751F1E3E4F0002AC83 /* storyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E490B5741F1E3E4F0002AC83 /* storyCollectionViewCell.swift */; };
+		E490B5771F1E4AEE0002AC83 /* i1.png in Resources */ = {isa = PBXBuildFile; fileRef = E490B5761F1E4AEE0002AC83 /* i1.png */; };
+		E490B5791F1E4AF70002AC83 /* i2.png in Resources */ = {isa = PBXBuildFile; fileRef = E490B5781F1E4AF70002AC83 /* i2.png */; };
+		E490B57B1F1E599B0002AC83 /* notificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E490B57A1F1E599B0002AC83 /* notificationsViewController.swift */; };
+		E490B57D1F1E5DD30002AC83 /* notificationsTVDSDL.swift in Sources */ = {isa = PBXBuildFile; fileRef = E490B57C1F1E5DD30002AC83 /* notificationsTVDSDL.swift */; };
+		E490B57F1F1F096A0002AC83 /* storyDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E490B57E1F1F096A0002AC83 /* storyDetailViewController.swift */; };
+		E490B5811F1F118F0002AC83 /* storyHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E490B5801F1F118F0002AC83 /* storyHeaderTableViewCell.swift */; };
+		E490B5831F1F1FF30002AC83 /* storyLeftRightTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E490B5821F1F1FF30002AC83 /* storyLeftRightTableViewCell.swift */; };
+		E490B5871F1F25520002AC83 /* Suchita3.png in Resources */ = {isa = PBXBuildFile; fileRef = E490B5861F1F25520002AC83 /* Suchita3.png */; };
+		E490B5891F1F28F50002AC83 /* quoteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E490B5881F1F28F50002AC83 /* quoteTableViewCell.swift */; };
+		E490B58B1F1F2FF50002AC83 /* readNextTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E490B58A1F1F2FF50002AC83 /* readNextTableViewCell.swift */; };
+		E490B58D1F1F30C10002AC83 /* next.png in Resources */ = {isa = PBXBuildFile; fileRef = E490B58C1F1F30C10002AC83 /* next.png */; };
+		E490B58F1F1F919E0002AC83 /* reminderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E490B58E1F1F919E0002AC83 /* reminderTableViewCell.swift */; };
+		E490B5911F1F9F4F0002AC83 /* notifTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E490B5901F1F9F4F0002AC83 /* notifTableViewCell.swift */; };
 		E49B88D81F18B74C006451AB /* Explore.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E49B88D71F18B74C006451AB /* Explore.storyboard */; };
 		E49B88DC1F18C20A006451AB /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E49B88DB1F18C20A006451AB /* SWRevealViewController.m */; };
 		E49B88DE1F18D279006451AB /* hamburgerMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49B88DD1F18D279006451AB /* hamburgerMenuViewController.swift */; };
@@ -62,6 +87,16 @@
 		E43CA8721F1A126E00FD764E /* adoptionInBookmarksTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = adoptionInBookmarksTableViewController.swift; sourceTree = "<group>"; };
 		E43CA8741F1A12F300FD764E /* eventsInBookmarksTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = eventsInBookmarksTableViewController.swift; sourceTree = "<group>"; };
 		E43CA8761F1A1B0800FD764E /* bookmarksTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = bookmarksTableViewCell.swift; sourceTree = "<group>"; };
+		E43CA8781F1A32D800FD764E /* allChatsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = allChatsViewController.swift; sourceTree = "<group>"; };
+		E43CA87A1F1A361800FD764E /* SourceSansPro-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-Regular.ttf"; sourceTree = "<group>"; };
+		E43CA87C1F1A399600FD764E /* chatTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = chatTableViewCell.swift; sourceTree = "<group>"; };
+		E43CA87E1F1A5C9500FD764E /* oneChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = oneChatViewController.swift; sourceTree = "<group>"; };
+		E43CA8801F1BC5ED00FD764E /* exploreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = exploreViewController.swift; sourceTree = "<group>"; };
+		E43CA8821F1C6C4D00FD764E /* questionOnlyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = questionOnlyTableViewCell.swift; sourceTree = "<group>"; };
+		E43CA8851F1C742E00FD764E /* exploreTVDSDL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = exploreTVDSDL.swift; sourceTree = "<group>"; };
+		E43CA8871F1CF3AA00FD764E /* tookToServiceTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tookToServiceTableViewCell.swift; sourceTree = "<group>"; };
+		E43CA8891F1D138800FD764E /* doggo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = doggo.jpg; sourceTree = "<group>"; };
+		E43CA88B1F1D13FC00FD764E /* imagesInExploreCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = imagesInExploreCollectionViewCell.swift; sourceTree = "<group>"; };
 		E4768C6E1EF771DE003D2506 /* loginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
 		E4768C701EF7FB98003D2506 /* tutSample1.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = tutSample1.mov; sourceTree = "<group>"; };
 		E4768C721EF80F15003D2506 /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
@@ -75,6 +110,21 @@
 		E4768C821EF86947003D2506 /* MeTab.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MeTab.storyboard; sourceTree = "<group>"; };
 		E4768C881EF86B0B003D2506 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		E4768C8A1EF929E2003D2506 /* homeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = homeViewController.swift; sourceTree = "<group>"; };
+		E490B55E1F1E358A0002AC83 /* PinterestLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinterestLayout.swift; sourceTree = "<group>"; };
+		E490B5741F1E3E4F0002AC83 /* storyCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = storyCollectionViewCell.swift; sourceTree = "<group>"; };
+		E490B5761F1E4AEE0002AC83 /* i1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = i1.png; sourceTree = "<group>"; };
+		E490B5781F1E4AF70002AC83 /* i2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = i2.png; sourceTree = "<group>"; };
+		E490B57A1F1E599B0002AC83 /* notificationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = notificationsViewController.swift; sourceTree = "<group>"; };
+		E490B57C1F1E5DD30002AC83 /* notificationsTVDSDL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = notificationsTVDSDL.swift; sourceTree = "<group>"; };
+		E490B57E1F1F096A0002AC83 /* storyDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = storyDetailViewController.swift; sourceTree = "<group>"; };
+		E490B5801F1F118F0002AC83 /* storyHeaderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = storyHeaderTableViewCell.swift; sourceTree = "<group>"; };
+		E490B5821F1F1FF30002AC83 /* storyLeftRightTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = storyLeftRightTableViewCell.swift; sourceTree = "<group>"; };
+		E490B5861F1F25520002AC83 /* Suchita3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Suchita3.png; sourceTree = "<group>"; };
+		E490B5881F1F28F50002AC83 /* quoteTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = quoteTableViewCell.swift; sourceTree = "<group>"; };
+		E490B58A1F1F2FF50002AC83 /* readNextTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = readNextTableViewCell.swift; sourceTree = "<group>"; };
+		E490B58C1F1F30C10002AC83 /* next.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = next.png; sourceTree = "<group>"; };
+		E490B58E1F1F919E0002AC83 /* reminderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = reminderTableViewCell.swift; sourceTree = "<group>"; };
+		E490B5901F1F9F4F0002AC83 /* notifTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = notifTableViewCell.swift; sourceTree = "<group>"; };
 		E49B88D71F18B74C006451AB /* Explore.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Explore.storyboard; sourceTree = "<group>"; };
 		E49B88D91F18C208006451AB /* PetOye-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PetOye-Bridging-Header.h"; sourceTree = "<group>"; };
 		E49B88DA1F18C20A006451AB /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
@@ -166,6 +216,19 @@
 			name = Controllers;
 			sourceTree = "<group>";
 		};
+		E43CA8841F1C6C6700FD764E /* Explore */ = {
+			isa = PBXGroup;
+			children = (
+				E490B5741F1E3E4F0002AC83 /* storyCollectionViewCell.swift */,
+				E43CA88B1F1D13FC00FD764E /* imagesInExploreCollectionViewCell.swift */,
+				E43CA8871F1CF3AA00FD764E /* tookToServiceTableViewCell.swift */,
+				E43CA8851F1C742E00FD764E /* exploreTVDSDL.swift */,
+				E43CA8821F1C6C4D00FD764E /* questionOnlyTableViewCell.swift */,
+				E43CA8801F1BC5ED00FD764E /* exploreViewController.swift */,
+			);
+			name = Explore;
+			sourceTree = "<group>";
+		};
 		E4768C841EF86969003D2506 /* Supporting files */ = {
 			isa = PBXGroup;
 			children = (
@@ -174,6 +237,11 @@
 				E4768C881EF86B0B003D2506 /* .gitignore */,
 				E4768C701EF7FB98003D2506 /* tutSample1.mov */,
 				E4D80E871F18F26700C09B6F /* demo.jpg */,
+				E43CA8891F1D138800FD764E /* doggo.jpg */,
+				E490B5761F1E4AEE0002AC83 /* i1.png */,
+				E490B5781F1E4AF70002AC83 /* i2.png */,
+				E490B5861F1F25520002AC83 /* Suchita3.png */,
+				E490B58C1F1F30C10002AC83 /* next.png */,
 			);
 			name = "Supporting files";
 			sourceTree = "<group>";
@@ -181,6 +249,7 @@
 		E4768C851EF86988003D2506 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				E490B55E1F1E358A0002AC83 /* PinterestLayout.swift */,
 				E49B88DA1F18C20A006451AB /* SWRevealViewController.h */,
 				E49B88DB1F18C20A006451AB /* SWRevealViewController.m */,
 				E418C4DE1EF6FD2D00B02C47 /* Colors.swift */,
@@ -202,6 +271,16 @@
 		E4768C871EF869B1003D2506 /* PetOye app v1 */ = {
 			isa = PBXGroup;
 			children = (
+				E490B5901F1F9F4F0002AC83 /* notifTableViewCell.swift */,
+				E490B58E1F1F919E0002AC83 /* reminderTableViewCell.swift */,
+				E490B58A1F1F2FF50002AC83 /* readNextTableViewCell.swift */,
+				E490B5881F1F28F50002AC83 /* quoteTableViewCell.swift */,
+				E490B5821F1F1FF30002AC83 /* storyLeftRightTableViewCell.swift */,
+				E490B5801F1F118F0002AC83 /* storyHeaderTableViewCell.swift */,
+				E490B57E1F1F096A0002AC83 /* storyDetailViewController.swift */,
+				E490B57C1F1E5DD30002AC83 /* notificationsTVDSDL.swift */,
+				E490B57A1F1E599B0002AC83 /* notificationsViewController.swift */,
+				E43CA8841F1C6C6700FD764E /* Explore */,
 				E4768C861EF869A2003D2506 /* Intro */,
 				E4F5DA8F1EFB77CC00801431 /* Home */,
 			);
@@ -250,6 +329,7 @@
 		E49CB83F1EEFB6E000FE2C73 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				E43CA87A1F1A361800FD764E /* SourceSansPro-Regular.ttf */,
 				E49CB8371EEFB68B00FE2C73 /* HVD Fonts - BrandonText-Regular.otf */,
 				E49CB8391EEFB6A900FE2C73 /* HVD Fonts - BrandonText-Light.otf */,
 				E49CB83B1EEFB6C000FE2C73 /* HVD Fonts - BrandonText-Bold.otf */,
@@ -261,6 +341,9 @@
 		E4F5DA8F1EFB77CC00801431 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				E43CA87E1F1A5C9500FD764E /* oneChatViewController.swift */,
+				E43CA87C1F1A399600FD764E /* chatTableViewCell.swift */,
+				E43CA8781F1A32D800FD764E /* allChatsViewController.swift */,
 				E43CA8761F1A1B0800FD764E /* bookmarksTableViewCell.swift */,
 				E43CA8701F1A11B600FD764E /* placesInBookmarkTableViewController.swift */,
 				E43CA8721F1A126E00FD764E /* adoptionInBookmarksTableViewController.swift */,
@@ -338,7 +421,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E43CA87B1F1A365100FD764E /* SourceSansPro-Regular.ttf in Resources */,
 				E4768C831EF86947003D2506 /* MeTab.storyboard in Resources */,
+				E490B5791F1E4AF70002AC83 /* i2.png in Resources */,
 				E49CB83E1EEFB6DB00FE2C73 /* HVD Fonts - BrandonText-Medium.otf in Resources */,
 				E4768C7B1EF86041003D2506 /* Home.storyboard in Resources */,
 				E49CB83C1EEFB6C800FE2C73 /* HVD Fonts - BrandonText-Bold.otf in Resources */,
@@ -352,9 +437,13 @@
 				E49CB8301EEFB36E00FE2C73 /* LaunchScreen.storyboard in Resources */,
 				E4768C891EF86B0B003D2506 /* .gitignore in Resources */,
 				E4768C811EF86930003D2506 /* NotificationsTab.storyboard in Resources */,
+				E490B5771F1E4AEE0002AC83 /* i1.png in Resources */,
 				E49CB82D1EEFB36E00FE2C73 /* Assets.xcassets in Resources */,
 				E4768C711EF7FB98003D2506 /* tutSample1.mov in Resources */,
+				E490B5871F1F25520002AC83 /* Suchita3.png in Resources */,
+				E490B58D1F1F30C10002AC83 /* next.png in Resources */,
 				E49CB82B1EEFB36E00FE2C73 /* Main.storyboard in Resources */,
+				E43CA88A1F1D138800FD764E /* doggo.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,17 +502,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E490B57B1F1E599B0002AC83 /* notificationsViewController.swift in Sources */,
+				E490B5751F1E3E4F0002AC83 /* storyCollectionViewCell.swift in Sources */,
+				E43CA8811F1BC5ED00FD764E /* exploreViewController.swift in Sources */,
 				E43CA8751F1A12F300FD764E /* eventsInBookmarksTableViewController.swift in Sources */,
+				E43CA87F1F1A5C9500FD764E /* oneChatViewController.swift in Sources */,
+				E43CA88C1F1D13FC00FD764E /* imagesInExploreCollectionViewCell.swift in Sources */,
+				E490B5811F1F118F0002AC83 /* storyHeaderTableViewCell.swift in Sources */,
 				E49B88DE1F18D279006451AB /* hamburgerMenuViewController.swift in Sources */,
 				E49CB8281EEFB36E00FE2C73 /* ViewController.swift in Sources */,
 				E4D80E861F18EC3B00C09B6F /* shortcutTableViewCell.swift in Sources */,
 				E4768C8B1EF929E2003D2506 /* homeViewController.swift in Sources */,
+				E490B55F1F1E358A0002AC83 /* PinterestLayout.swift in Sources */,
+				E43CA87D1F1A399600FD764E /* chatTableViewCell.swift in Sources */,
 				E4768C751EF823DE003D2506 /* basicInfoViewController.swift in Sources */,
 				E4768C771EF838FF003D2506 /* userTypeTableViewCell.swift in Sources */,
+				E490B58F1F1F919E0002AC83 /* reminderTableViewCell.swift in Sources */,
+				E490B5911F1F9F4F0002AC83 /* notifTableViewCell.swift in Sources */,
 				E43CA86F1F1A0F8000FD764E /* questionsInBookmarkTableViewController.swift in Sources */,
+				E43CA8791F1A32D800FD764E /* allChatsViewController.swift in Sources */,
 				E4768C731EF80F15003D2506 /* Helpers.swift in Sources */,
 				E418C4DF1EF6FD2D00B02C47 /* Colors.swift in Sources */,
+				E43CA8881F1CF3AA00FD764E /* tookToServiceTableViewCell.swift in Sources */,
+				E490B57F1F1F096A0002AC83 /* storyDetailViewController.swift in Sources */,
+				E43CA8831F1C6C4D00FD764E /* questionOnlyTableViewCell.swift in Sources */,
+				E490B5891F1F28F50002AC83 /* quoteTableViewCell.swift in Sources */,
 				E49CB8261EEFB36E00FE2C73 /* AppDelegate.swift in Sources */,
+				E490B57D1F1E5DD30002AC83 /* notificationsTVDSDL.swift in Sources */,
 				E49B88DC1F18C20A006451AB /* SWRevealViewController.m in Sources */,
 				E49B88E01F18E006006451AB /* hamUserInfoTableViewCell.swift in Sources */,
 				E418C4DD1EF6FA7A00B02C47 /* introViewController.swift in Sources */,
@@ -431,9 +536,12 @@
 				E43CA86D1F19FF6F00FD764E /* serviceInBookmarkTableViewController.swift in Sources */,
 				E4D80E8A1F18F93B00C09B6F /* petStuffTableViewCell.swift in Sources */,
 				E43CA8731F1A126E00FD764E /* adoptionInBookmarksTableViewController.swift in Sources */,
+				E490B58B1F1F2FF50002AC83 /* readNextTableViewCell.swift in Sources */,
 				E4D80E8C1F19119200C09B6F /* subMenuTitleTableViewCell.swift in Sources */,
 				E43CA8711F1A11B600FD764E /* placesInBookmarkTableViewController.swift in Sources */,
 				E4768C6F1EF771DE003D2506 /* loginViewController.swift in Sources */,
+				E490B5831F1F1FF30002AC83 /* storyLeftRightTableViewCell.swift in Sources */,
+				E43CA8861F1C742E00FD764E /* exploreTVDSDL.swift in Sources */,
 				E43CA8771F1A1B0800FD764E /* bookmarksTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

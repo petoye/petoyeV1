@@ -90,24 +90,32 @@ strip_invalid_archs() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/Bolts/Bolts.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/ExpandableLabel/ExpandableLabel.framework"
   install_framework "$BUILT_PRODUCTS_DIR/FBSDKCoreKit/FBSDKCoreKit.framework"
   install_framework "$BUILT_PRODUCTS_DIR/FBSDKLoginKit/FBSDKLoginKit.framework"
   install_framework "$BUILT_PRODUCTS_DIR/FBSDKShareKit/FBSDKShareKit.framework"
   install_framework "$BUILT_PRODUCTS_DIR/FacebookCore/FacebookCore.framework"
   install_framework "$BUILT_PRODUCTS_DIR/FacebookLogin/FacebookLogin.framework"
   install_framework "$BUILT_PRODUCTS_DIR/FacebookShare/FacebookShare.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/JSQMessagesViewController/JSQMessagesViewController.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/JSQSystemSoundPlayer/JSQSystemSoundPlayer.framework"
   install_framework "$BUILT_PRODUCTS_DIR/PageMenu/PageMenu.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/SJFluidSegmentedControl/SJFluidSegmentedControl.framework"
   install_framework "$BUILT_PRODUCTS_DIR/Toast-Swift/Toast_Swift.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/Bolts/Bolts.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/ExpandableLabel/ExpandableLabel.framework"
   install_framework "$BUILT_PRODUCTS_DIR/FBSDKCoreKit/FBSDKCoreKit.framework"
   install_framework "$BUILT_PRODUCTS_DIR/FBSDKLoginKit/FBSDKLoginKit.framework"
   install_framework "$BUILT_PRODUCTS_DIR/FBSDKShareKit/FBSDKShareKit.framework"
   install_framework "$BUILT_PRODUCTS_DIR/FacebookCore/FacebookCore.framework"
   install_framework "$BUILT_PRODUCTS_DIR/FacebookLogin/FacebookLogin.framework"
   install_framework "$BUILT_PRODUCTS_DIR/FacebookShare/FacebookShare.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/JSQMessagesViewController/JSQMessagesViewController.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/JSQSystemSoundPlayer/JSQSystemSoundPlayer.framework"
   install_framework "$BUILT_PRODUCTS_DIR/PageMenu/PageMenu.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/SJFluidSegmentedControl/SJFluidSegmentedControl.framework"
   install_framework "$BUILT_PRODUCTS_DIR/Toast-Swift/Toast_Swift.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then

@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>ExpandableLabel.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>FBSDKCoreKit.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -39,12 +44,27 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>JSQMessagesViewController.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>JSQSystemSoundPlayer.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>PageMenu.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
 		<key>Pods-PetOye.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SJFluidSegmentedControl.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -57,12 +77,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>1C0116DFF3121AE371F3C2121E51292F</key>
+		<key>122A7BD14EB60FA15F932132334C578B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>30E01F11C650E0C3126E563C155D51EF</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>332F91393FB1DE033D370B4CEDDD5FCF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>410BC9493C3BE3F404F947889071ABAC</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -82,6 +112,11 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>65A0E3046790E9959ECF7381CB7F0951</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>7335E9C9689F3B8A16F063A884748533</key>
 		<dict>
 			<key>primary</key>
@@ -97,7 +132,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B963BB8EB1908034D47D8E17C886B49F</key>
+		<key>C7DCF2B547F7871B9BFD74DE93B0E173</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D0581AF7BF4A6DA140D280B19ECC7BFF</key>
 		<dict>
 			<key>primary</key>
 			<true/>

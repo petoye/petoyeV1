@@ -20,7 +20,27 @@
                     <view key="view" contentMode="scaleToFill" id="ddS-DS-ana">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8rA-a7-DcZ">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="zpD-Zt-ThE"/>
+                                </constraints>
+                                <color key="barTintColor" red="0.98029583689999999" green="0.98045963049999996" blue="0.98027425999999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <fontDescription key="fontDescription" name="BrandonText-Bold" family="Brandon Text" pointSize="20"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Stories &amp; Tips" id="2Ps-iL-atU"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="8rA-a7-DcZ" firstAttribute="top" secondItem="ddS-DS-ana" secondAttribute="top" id="PTi-s2-kQN"/>
+                            <constraint firstAttribute="trailing" secondItem="8rA-a7-DcZ" secondAttribute="trailing" id="jqT-Lu-6zH"/>
+                            <constraint firstItem="8rA-a7-DcZ" firstAttribute="leading" secondItem="ddS-DS-ana" secondAttribute="leading" id="z5F-hZ-iUS"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="storiesUnselected" selectedImage="storiesSelected" id="4Lc-SH-Tyu"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
@@ -33,7 +53,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="storiesSelected" width="24" height="26"/>
-        <image name="storiesUnselected" width="24" height="26"/>
+        <image name="storiesSelected" width="21" height="25"/>
+        <image name="storiesUnselected" width="21" height="25"/>
     </resources>
 </document>
