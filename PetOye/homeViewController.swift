@@ -8,13 +8,23 @@
 
 import UIKit
 
-class homeViewController: UIViewController {
+class homeViewController: UIViewController, UITextFieldDelegate, UIScrollViewDelegate {
 
     @IBOutlet weak var searchView: UIView!
     
     @IBOutlet weak var hamButton: UIBarButtonItem!
     
     @IBOutlet weak var navigationBar: UINavigationBar!
+    
+    @IBOutlet weak var bookmarkButton: UIButton!
+    
+    @IBOutlet weak var searchBar: UITextField!
+    
+    @IBOutlet weak var closeButton: UIButton!
+    
+    @IBOutlet weak var recentSearchtTable: UITableView!
+    
+    let nearbyContent = ["Vets","Groomers","Trainers","Walkers","Behaviorists","Day Care","Boarding","Foster Homes","Cafes"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,6 +56,36 @@ class homeViewController: UIViewController {
         
         navigationBar.tintColor = UIColor.clear
         
+        searchBar.delegate = self
+        
+        closeButton.isHidden = true
+        
+        recentSearchtTable.isHidden = true
+        
+        recentSearchtTable.tableFooterView = UIView(frame: CGRect.zero)
+        
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(homeViewController.keyboardWillHide(notification:)),
+                                               name: NSNotification.Name.UIKeyboardWillHide, object: nil)
+        
+        recentSearchtTable.layer.contentsScale = UIScreen.main.scale;
+        recentSearchtTable.layer.shadowColor = UIColor(red: 200/255.0, green: 200/255.0, blue: 200/255.0, alpha: 1).cgColor
+        recentSearchtTable.layer.shadowOffset = CGSize(width: 0.0, height: 5.0);
+        recentSearchtTable.layer.shadowRadius = 4.0;
+        recentSearchtTable.layer.shadowOpacity = 0.3;
+        recentSearchtTable.layer.masksToBounds = false;
+    }
+
+    func keyboardWillHide(notification: NSNotification) {
+        if let _ = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
+            
+//            searchBar.text = ""
+//            
+//            closeButton.isHidden = true
+//            bookmarkButton.isHidden = false
+//            
+//            recentSearchtTable.isHidden = true
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -53,20 +93,34 @@ class homeViewController: UIViewController {
         self.navigationController?.navigationBar.barStyle = .default
     }
     
-    
-    @IBAction func hamburgerButtonPressed(_ sender: Any) {
+    func textFieldDidBeginEditing(_ textField: UITextField) {
         
+        closeButton.isHidden = false
+        bookmarkButton.isHidden = true
         
-    }
-    
-    @IBAction func messageButtonPressed(_ sender: Any) {
-    
-        
+        recentSearchtTable.isHidden = false
     }
 
-    @IBAction func bookmarkButtonPressed(_ sender: Any) {
-        
+    @IBAction func hambugerButtonPressed(_ sender: Any) {
+            
+        self.performSegue(withIdentifier: "bookmarks", sender: self)
         
     }
-
+    
+    @IBAction func closeButtonPressed(_ sender: Any) {
+        
+        searchBar.resignFirstResponder()
+        searchBar.text = ""
+        
+        closeButton.isHidden = true
+        bookmarkButton.isHidden = false
+        
+        recentSearchtTable.isHidden = true
+    }
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        
+        searchBar.resignFirstResponder()
+    }
+    
 }
