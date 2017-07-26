@@ -34,6 +34,8 @@ class searchViewController: UIViewController {
     
     @IBOutlet weak var headerTextBreeds: UILabel!
     
+    @IBOutlet weak var resultsTable: UITableView!
+    
     var isBreedType = Bool()
     
     let searchController = UISearchController(searchResultsController: nil)
@@ -60,6 +62,10 @@ class searchViewController: UIViewController {
     
     var costForService = ["500-1000","1000-1500","1500+"]
     
+    var tagsForService = ["Hip Dislocation","Ticks","Paralysis", "+2"]
+    
+    var type = [1,2,3]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -82,6 +88,12 @@ class searchViewController: UIViewController {
         filterTable.estimatedRowHeight = 42
         
         filterTable.rowHeight = UITableViewAutomaticDimension
+        
+        resultsTable.tableFooterView = UIView(frame: CGRect.zero)
+        
+        resultsTable.estimatedRowHeight = 42
+        
+        resultsTable.rowHeight = UITableViewAutomaticDimension
         
         filterTable.separatorStyle = .none
     }
@@ -130,8 +142,33 @@ class searchViewController: UIViewController {
     
     @IBAction func changeBreedsButtonPressed(_ sender: Any) {
         
+        let actionSheetController = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
+        
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+        actionSheetController.addAction(cancelAction)
         
         
+        let dogAction = UIAlertAction(title: "Dog breeds", style: .default) { action -> Void in
+
+        }
+        actionSheetController.addAction(dogAction)
+        
+        let catAction = UIAlertAction(title: "Cat breeds", style: .default) { action -> Void in
+
+        }
+        actionSheetController.addAction(catAction)
+        
+        let birdAction = UIAlertAction(title: "Bird breeds", style: .default) { action -> Void in
+            
+        }
+        actionSheetController.addAction(birdAction)
+        
+        let otherAction = UIAlertAction(title: "Other breeds", style: .default) { action -> Void in
+            
+        }
+        actionSheetController.addAction(otherAction)
+        
+        self.present(actionSheetController, animated: true, completion: nil)
     }
     
     

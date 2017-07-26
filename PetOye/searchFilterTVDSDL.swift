@@ -20,6 +20,10 @@ extension searchViewController : UITableViewDataSource, UITableViewDelegate, fil
             
             return 1
         }
+        else if tableView == self.breedTable {
+            
+            return 1
+        }
         else {
             
             return 1
@@ -50,7 +54,7 @@ extension searchViewController : UITableViewDataSource, UITableViewDelegate, fil
                 return tags.count
             }
         }
-        else {
+        else if tableView == self.breedTable {
             
             if shouldShowSearchResults2 {
                 
@@ -60,6 +64,10 @@ extension searchViewController : UITableViewDataSource, UITableViewDelegate, fil
                 
                 return breeds.count
             }
+        }
+        else {
+            
+            return type.count
         }
     }
     
@@ -126,7 +134,7 @@ extension searchViewController : UITableViewDataSource, UITableViewDelegate, fil
             cell.selectionStyle = .none
             return cell
         }
-        else {
+        else if tableView == self.breedTable {
             
             let cell = tableView.dequeueReusableCell(withIdentifier: "quickFilters", for: indexPath) as! quickFilterTableViewCell
             
@@ -140,6 +148,107 @@ extension searchViewController : UITableViewDataSource, UITableViewDelegate, fil
                 let breed = filteredBreeds[indexPath.row]
                 cell.filter.text = breed.name
             }
+            cell.selectionStyle = .none
+            return cell
+        }
+        else {
+            
+            var identifier = String()
+            
+            if type[indexPath.row] == 1 {
+                
+                identifier = "serviceResult"
+            }
+            else if type[indexPath.row] == 2 {
+                
+                identifier = "leisureResult"
+            }
+            else {
+                
+                identifier = "eventResult"
+            }
+            
+            let cell = tableView.dequeueReusableCell(withIdentifier: identifier, for: indexPath) as! searchServiceTableViewCell
+            
+            
+            
+            if type[indexPath.row] == 1 {
+                
+                cell.rating.layer.cornerRadius = 2.67
+                cell.rating.clipsToBounds = true
+                
+                cell.timeAvailable.text = "Available from 9 am - 7 pm today"
+                cell.timeAvailable.textColor = self.HEX37A784()
+                
+                cell.pic.layer.cornerRadius = 17
+                cell.pic.clipsToBounds = true
+                cell.pic.image = #imageLiteral(resourceName: "demo.jpg")
+                
+                cell.name.text = "Dr. Shailendra Pethe"
+                
+                cell.type1.text = "Vet"
+                cell.type2.text = "3 years exp"
+                cell.type3.text = "3 kms away"
+                
+                cell.type1Width.constant = self.box(text: "Vet", fontSize: 13, fontName: "BrandonText-Regular").0 + 2
+                cell.type2Width.constant = self.box(text: "3 years exp", fontSize: 13, fontName: "BrandonText-Regular").0
+                cell.type3Width.constant = self.box(text: "3 kms away", fontSize: 13, fontName: "BrandonText-Regular").0
+                
+                cell.sep1.frame.origin.x = cell.type1.frame.origin.x + cell.type1Width.constant + 3.5
+                cell.sep2.frame.origin.x = cell.sep1.frame.origin.x + cell.type2Width.constant + 7
+                
+                cell.expFillerGrey.layer.cornerRadius = 5
+                cell.expFillerGrey.clipsToBounds = true
+                
+                cell.expGreen.layer.cornerRadius = 5
+                cell.expGreen.clipsToBounds = true
+                
+                cell.serviceFillerGrey.layer.cornerRadius = 5
+                cell.serviceFillerGrey.clipsToBounds = true
+                
+                cell.serviceGreen.layer.cornerRadius = 5
+                cell.serviceGreen.clipsToBounds = true
+                
+                cell.expLabel.text = "Vaccinations, checkups, hip dislocation, surgery"
+                cell.serviceLabel.text = "Corteous, Humble, Very friendly"
+
+            }
+            else if type[indexPath.row] == 2 {
+                
+                cell.rating.layer.cornerRadius = 2.67
+                cell.rating.clipsToBounds = true
+                
+                cell.timeAvailable.text = "Available from 9 am - 7 pm today"
+                cell.timeAvailable.textColor = self.HEX37A784()
+                
+                cell.name.text = "Pawfect Life"
+                cell.type1.text = "Pet Boarding"
+                cell.type2.text = "3 kms away"
+                
+                cell.type1Width.constant = self.box(text: "Pet Boarding", fontSize: 13, fontName: "BrandonText-Regular").0 + 2
+                cell.type2Width.constant = self.box(text: "3 kms away", fontSize: 13, fontName: "BrandonText-Regular").0 + 2
+                
+                cell.sep1.frame.origin.x = cell.type1.frame.origin.x + cell.type1Width.constant + 3.5
+                
+                cell.detail1.text = "Cats, Dogs, Rabbits"
+                cell.detail2.text = "Rs.500 for a day"
+            }
+            else {
+                
+                cell.name.text = "Happy Paws"
+                cell.type1.text = "Event"
+                cell.type2.text = "3 kms away"
+                cell.timeAvailable.text = "27/07/2017"
+                
+                cell.type1Width.constant = self.box(text: "Event", fontSize: 13, fontName: "BrandonText-Regular").0 + 2
+                cell.type2Width.constant = self.box(text: "3 kms away", fontSize: 13, fontName: "BrandonText-Regular").0 + 2
+                
+                cell.sep1.frame.origin.x = cell.type1.frame.origin.x + cell.type1Width.constant + 3.5
+                
+                cell.detail1.text = "Karjat Heritage Resort, Karjat"
+                cell.detail2.text = "Rs.500 for a day"
+            }
+
             cell.selectionStyle = .none
             return cell
         }
@@ -244,10 +353,25 @@ extension searchViewController : UITableViewDataSource, UITableViewDelegate, fil
                 collectionCell.selectionStyle = .none
             }
         }
+        else {
+            
+            guard let collectionCell = cell as? searchServiceTableViewCell else { return }
+            
+            if type[indexPath.row] == 1 {
+                
+                collectionCell.setCollectionViewDataSourceDelegate(self, forRow: 100)
+            }
+            else {
+                
+                collectionCell.setCollectionViewDataSourceDelegate(self, forRow: 101)
+            }
+
+            collectionCell.selectionStyle = .none
+        }
     }
 }
 
-extension searchViewController : UICollectionViewDataSource, UICollectionViewDelegate {
+extension searchViewController : UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         
@@ -260,27 +384,81 @@ extension searchViewController : UICollectionViewDataSource, UICollectionViewDel
             
             return sortByForService.count
         }
-        else {
+        else if collectionView.tag == 2 {
             
             return 3
+        }
+        else {
+            
+            return 4
         }
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        let cell  = collectionView.dequeueReusableCell(withReuseIdentifier: "sortByCell", for: indexPath) as! sortByCollectionViewCell
-        
-        if collectionView.tag == 1 {
+        if collectionView.tag == 1 || collectionView.tag == 2 {
             
-            cell.icon.image = sortByForService[indexPath.item]
-            cell.title.text = sortByTitleForService[indexPath.item]
+            let cell  = collectionView.dequeueReusableCell(withReuseIdentifier: "sortByCell", for: indexPath) as! sortByCollectionViewCell
+            
+            if collectionView.tag == 1 {
+                
+                cell.icon.image = sortByForService[indexPath.item]
+                cell.title.text = sortByTitleForService[indexPath.item]
+            }
+            else {
+                
+                cell.icon.image = #imageLiteral(resourceName: "indian-rupee")
+                cell.title.text = costForService[indexPath.row]
+            }
+            cell.title.textColor = self.HEX929292()
+            return cell
         }
         else {
             
-            cell.icon.image = #imageLiteral(resourceName: "indian-rupee")
-            cell.title.text = costForService[indexPath.row]
+            if collectionView.tag == 100 {
+                
+                let cell  = collectionView.dequeueReusableCell(withReuseIdentifier: "tag", for: indexPath) as! tagsCollectionViewCell
+                
+                cell.tagLabel.text = tagsForService[indexPath.row]
+                
+                cell.layer.cornerRadius = 3.33
+                cell.clipsToBounds = true
+                cell.layer.borderColor = self.HEX37A784().cgColor
+                cell.layer.borderWidth = 0.5
+                
+                return cell
+            }
+            else {
+                
+                let cell  = collectionView.dequeueReusableCell(withReuseIdentifier: "photo", for: indexPath) as! imagesInExploreCollectionViewCell
+
+                cell.image.image = #imageLiteral(resourceName: "doggo.jpg")
+                cell.image.layer.cornerRadius = 3.33
+                cell.image.clipsToBounds = true
+                
+                return cell
+            }
         }
-        cell.title.textColor = self.HEX929292()
-        return cell
+        
     }
+    
+    func collectionView(_ collectionView: UICollectionView,
+                        layout collectionViewLayout: UICollectionViewLayout,
+                        sizeForItemAt indexPath: IndexPath) -> CGSize {
+        
+        if (collectionView.tag == 1 || collectionView.tag == 2) {
+            
+            return CGSize(width: 91, height: 65)
+        }
+        else if collectionView.tag == 101 {
+            
+            return CGSize(width: 90, height: 90)
+        }
+        else {
+            
+            let size = self.box(text: tagsForService[indexPath.item], fontSize: 10, fontName: "BrandonText-Regular").0
+            return CGSize(width: size + 10.0, height: 20)
+        }
+    }
+    
 }

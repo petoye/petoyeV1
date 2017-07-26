@@ -79,6 +79,9 @@
 		E49CB83A1EEFB6AF00FE2C73 /* HVD Fonts - BrandonText-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = E49CB8391EEFB6A900FE2C73 /* HVD Fonts - BrandonText-Light.otf */; };
 		E49CB83C1EEFB6C800FE2C73 /* HVD Fonts - BrandonText-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = E49CB83B1EEFB6C000FE2C73 /* HVD Fonts - BrandonText-Bold.otf */; };
 		E49CB83E1EEFB6DB00FE2C73 /* HVD Fonts - BrandonText-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = E49CB83D1EEFB6D600FE2C73 /* HVD Fonts - BrandonText-Medium.otf */; };
+		E4AC87641F277C1300FACEBB /* searchServiceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AC87631F277C1300FACEBB /* searchServiceTableViewCell.swift */; };
+		E4AC87661F278BEA00FACEBB /* tagsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AC87651F278BEA00FACEBB /* tagsCollectionViewCell.swift */; };
+		E4AC87681F2792AC00FACEBB /* tagsLeftAligned.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AC87671F2792AC00FACEBB /* tagsLeftAligned.swift */; };
 		E4D80E861F18EC3B00C09B6F /* shortcutTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D80E851F18EC3B00C09B6F /* shortcutTableViewCell.swift */; };
 		E4D80E881F18F26700C09B6F /* demo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E4D80E871F18F26700C09B6F /* demo.jpg */; };
 		E4D80E8A1F18F93B00C09B6F /* petStuffTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D80E891F18F93B00C09B6F /* petStuffTableViewCell.swift */; };
@@ -164,6 +167,9 @@
 		E49CB8391EEFB6A900FE2C73 /* HVD Fonts - BrandonText-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HVD Fonts - BrandonText-Light.otf"; sourceTree = "<group>"; };
 		E49CB83B1EEFB6C000FE2C73 /* HVD Fonts - BrandonText-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HVD Fonts - BrandonText-Bold.otf"; sourceTree = "<group>"; };
 		E49CB83D1EEFB6D600FE2C73 /* HVD Fonts - BrandonText-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HVD Fonts - BrandonText-Medium.otf"; sourceTree = "<group>"; };
+		E4AC87631F277C1300FACEBB /* searchServiceTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = searchServiceTableViewCell.swift; sourceTree = "<group>"; };
+		E4AC87651F278BEA00FACEBB /* tagsCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tagsCollectionViewCell.swift; sourceTree = "<group>"; };
+		E4AC87671F2792AC00FACEBB /* tagsLeftAligned.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tagsLeftAligned.swift; sourceTree = "<group>"; };
 		E4D80E851F18EC3B00C09B6F /* shortcutTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = shortcutTableViewCell.swift; sourceTree = "<group>"; };
 		E4D80E871F18F26700C09B6F /* demo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = demo.jpg; sourceTree = "<group>"; };
 		E4D80E891F18F93B00C09B6F /* petStuffTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = petStuffTableViewCell.swift; sourceTree = "<group>"; };
@@ -247,6 +253,7 @@
 		E4768C851EF86988003D2506 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				E4AC87671F2792AC00FACEBB /* tagsLeftAligned.swift */,
 				E490B5A21F20EE480002AC83 /* leftPaddedTextField.swift */,
 				E490B55E1F1E358A0002AC83 /* PinterestLayout.swift */,
 				E49B88DA1F18C20A006451AB /* SWRevealViewController.h */,
@@ -353,6 +360,8 @@
 		E490B5A11F20E9580002AC83 /* Search */ = {
 			isa = PBXGroup;
 			children = (
+				E4AC87651F278BEA00FACEBB /* tagsCollectionViewCell.swift */,
+				E4AC87631F277C1300FACEBB /* searchServiceTableViewCell.swift */,
 				E438E2181F21DDA400A2F6DF /* tagsTableViewCell.swift */,
 				E438E21A1F2224D400A2F6DF /* Tags.swift */,
 				E490B5A81F21C7970002AC83 /* sortByTableViewCell.swift */,
@@ -598,12 +607,15 @@
 				E43CA86F1F1A0F8000FD764E /* questionsInBookmarkTableViewController.swift in Sources */,
 				E43CA8791F1A32D800FD764E /* allChatsViewController.swift in Sources */,
 				E4768C731EF80F15003D2506 /* Helpers.swift in Sources */,
+				E4AC87661F278BEA00FACEBB /* tagsCollectionViewCell.swift in Sources */,
 				E418C4DF1EF6FD2D00B02C47 /* Colors.swift in Sources */,
 				E43CA8881F1CF3AA00FD764E /* tookToServiceTableViewCell.swift in Sources */,
 				E490B57F1F1F096A0002AC83 /* storyDetailViewController.swift in Sources */,
 				E43CA8831F1C6C4D00FD764E /* questionOnlyTableViewCell.swift in Sources */,
+				E4AC87641F277C1300FACEBB /* searchServiceTableViewCell.swift in Sources */,
 				E490B5891F1F28F50002AC83 /* quoteTableViewCell.swift in Sources */,
 				E490B5951F2086C70002AC83 /* searchTableViewCell.swift in Sources */,
+				E4AC87681F2792AC00FACEBB /* tagsLeftAligned.swift in Sources */,
 				E490B5991F20E8130002AC83 /* searchViewController.swift in Sources */,
 				E490B5A51F21AFF10002AC83 /* searchFilterTVDSDL.swift in Sources */,
 				E490B5A71F21B8810002AC83 /* quickFilterTableViewCell.swift in Sources */,
