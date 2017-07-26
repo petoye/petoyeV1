@@ -281,6 +281,10 @@ extension searchViewController : UITableViewDataSource, UITableViewDelegate, fil
                 tagViewShow(token: 2)
             }
         }
+        else if tableView == self.resultsTable {
+            
+            self.performSegue(withIdentifier: "serviceDetail", sender: self)
+        }
 
     }
     
@@ -369,6 +373,7 @@ extension searchViewController : UITableViewDataSource, UITableViewDelegate, fil
             collectionCell.selectionStyle = .none
         }
     }
+    
 }
 
 extension searchViewController : UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {

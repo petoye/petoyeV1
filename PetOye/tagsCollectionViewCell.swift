@@ -12,5 +12,6 @@ class tagsCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var tagLabel: UILabel!
     
+    @IBOutlet weak var icon: UIImageView!
     
 }

@@ -40,6 +40,12 @@ extension UIViewController {
         return UIColor(red: 241.0/255.0, green: 241.0/255.0, blue: 241.0/255.0, alpha: 1)
     }
     
+    func HEXF4F4F4() -> UIColor {
+        
+        return UIColor(red: 244.0/255.0, green: 244.0/255.0, blue: 244.0/255.0, alpha: 0.6)
+    }
+
+    
     func HEXF8F8F8() -> UIColor {
         
         return UIColor(red: 248.0/255.0, green: 248.0/255.0, blue: 248.0/255.0, alpha: 1)
@@ -84,6 +90,31 @@ extension UIViewController {
     func HEXAAAAAA() -> UIColor {
         
         return UIColor(red: 170.0/255.0, green: 170.0/255.0, blue: 170.0/255.0, alpha: 0.7)
+    }
+    
+    func HEX495767() -> UIColor {
+        
+        return UIColor(red: 73.0/255.0, green: 87.0/255.0, blue: 103.0/255.0, alpha: 1)
+    }
+    
+    func HEX98A5B3() -> UIColor {
+        
+        return UIColor(red: 152.0/255.0, green: 165.0/255.0, blue: 179.0/255.0, alpha: 1)
+    }
+
+    func HEX6F6A6A() -> UIColor {
+        
+        return UIColor(red: 111.0/255.0, green: 106.0/255.0, blue: 106.0/255.0, alpha: 0.6)
+    }
+    
+    func HEXC3BDBD() -> UIColor {
+        
+        return UIColor(red: 195.0/255.0, green: 189.0/255.0, blue: 189.0/255.0, alpha: 1)
+    }
+
+    func HEX485764() -> UIColor {
+        
+        return UIColor(red: 72.0/255.0, green: 87.0/255.0, blue: 100.0/255.0, alpha: 1)
     }
 
 }

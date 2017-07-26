@@ -74,6 +74,10 @@ class homeViewController: UIViewController, UITextFieldDelegate, UIScrollViewDel
         recentSearchtTable.layer.shadowRadius = 4.0;
         recentSearchtTable.layer.shadowOpacity = 0.3;
         recentSearchtTable.layer.masksToBounds = false;
+        
+        navigationBar.setBackgroundImage(UIImage(), for: .default)
+        navigationBar.shadowImage = UIImage()
+        navigationBar.isTranslucent = true
     }
 
     func keyboardWillHide(notification: NSNotification) {
